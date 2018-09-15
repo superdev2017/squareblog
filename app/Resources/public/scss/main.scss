@@ -1,0 +1,233 @@
+@import url("//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css");
+
+
+.line {
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  top: -.6em;
+}
+
+/** Pages **/
+.choose-locale {
+  margin-top: 50px;
+  text-align: center;
+  h1 {
+    width: 100%;
+    float: left;
+    display: inline;
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  .country {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 30px;
+    a {
+      position: relative;
+      display: inline-block;
+    }
+    .ribbon-wrapper {
+      position: absolute;
+      top: 0;
+      right: -10px;
+      span {
+        width: 170px;
+        color: #ffffff;
+      }
+    }
+    .flag-icon {
+      height: 113px;
+      width: 150px;
+      border: 1px solid black;
+    }
+  }
+  .disabled {
+    opacity: 0.4;
+
+  }
+}
+
+/** Profile & Subscription page **/
+.account {
+  .panel-body {
+    min-height: 359px;
+  }
+  .panel-footer {
+    height: 50px;
+  }
+}
+.account {
+  h2 {
+    margin-bottom: 20px;
+  }
+  .panel-heading {
+    background-color: #235D74 !important;
+    color: #ffffff;
+    background-image: none !important;
+  }
+  .btn-mail {
+    float: left;
+  }
+  .panel {
+    text-align: left;
+  }
+  .well {
+    text-align: left;
+  }
+}
+.table-user-information {
+  td {
+    text-align: left !important;
+    position: relative;
+  }
+  .form-control-feedback {
+    top: 8px;
+    right: 10px !important;
+  }
+}
+
+
+
+.user-row {
+  margin-bottom: 14px;
+}
+
+.user-row:last-child {
+  margin-bottom: 0;
+}
+
+.dropdown-user {
+  margin: 13px 0;
+  padding: 5px;
+  height: 100%;
+}
+
+.dropdown-user:hover {
+  cursor: pointer;
+}
+
+.table-user-information > tbody > tr {
+  border-top: 1px solid rgb(221, 221, 221);
+}
+
+.table-user-information > tbody > tr:first-child {
+  border-top: 0;
+}
+.table-user-information > tbody > tr > td {
+  border-top: 0;
+}
+.toppad {
+  margin-top:20px;
+}
+
+/** Contact **/
+
+
+.block {
+  padding: 15px;
+  padding-top: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #B4B4B4;
+  -webkit-box-shadow: 2px 7px 35px -5px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 2px 7px 35px -5px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 7px 35px -5px rgba(0, 0, 0, 0.6);
+}
+
+/** Tags from bootstrap 4 **/
+.tag {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+
+.tag-completed, .tag-approved, .tag-awaiting_approval {
+  background-color: #5cb85c;
+}
+
+.tag-needs_shipping, .tag-in_progress  {
+  background-color: #5bc0de;
+}
+
+.tag-unpaid, .tag-failed, .tag-refunded, .tag-rejected {
+  background-color: #d9534f;
+}
+
+.table-orders {
+  tr {
+    td {
+      vertical-align: middle !important;
+    }
+  }
+  .status, .type {
+    text-transform: capitalize;
+  }
+}
+
+// Blocks
+.block-page {
+  min-height: 600px;
+}
+
+.block-gray {
+  background: #f9f9f9;
+}
+
+.faq {
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+
+// Reviews
+.terms-and-conditions {
+  h3 {
+    margin-bottom: 20px;
+  }
+  p, li {
+    margin-bottom: 5px;
+    strong {
+      font-weight: 300;
+    }
+  }
+  ul {
+    padding-left: 15px;
+  }
+}
+
+.alert {
+  margin-bottom: 0px;
+}
+
+// Accordion
+.accordion {
+  .accordion-wrapper {
+    background: #fff;
+    cursor: pointer;
+    padding: 0 30px;
+    margin-bottom: 7.5px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 3px;
+    .accordion-tab {
+      font-size: 20px;
+      padding: 20px 0
+    }
+    .accordion-content {
+      color: #888;
+      line-height: 1.8;
+      padding-bottom: 30px;
+      display: none
+    }
+  }
+  .accordion-chevron {
+    float: right;
+  }
+}
+

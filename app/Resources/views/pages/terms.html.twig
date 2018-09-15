@@ -1,0 +1,87 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block title %}Terms & Conditions{% endblock %}
+
+{% block body %}
+    {% if (iframe != true) %}
+        {% include '/_shared/_header.html.twig' %}
+    {% endif %}
+    <div id="contact" class="terms-page page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="pages crawler-target">
+                        <p><strong>Acceptance of terms and conditions of use</strong></p>
+                        <p>By registering to use {{ app_name }} products or services, you affirm your acceptance of these Terms and Conditions of use and agree to comply with them now and throughout the period of your use of the {{ app_name }} Products or Services and thereafter.</p>
+                        <p>If you do not agree to these Terms and Conditions of use in their entirety, do not use {{ app_name }}s Products or Services. If you wish to cancel your {{ app_name }} account after a change in the Terms and Conditions of use, you must do so by writing an email and request to cancel your account.</p>
+                        <p>You acknowledge and agree that if you do elect to cancel your account, {{ app_name }} may delete any information that you have obtained through our Services, including without limitation, your Website Data, and Site Builder will not have any files available for your Use. Cancelled accounts will have all information deleted immediately upon cancelling.</p>
+                        <p>Company information</p>
+                        <p>{{ company_name }}</p>
+                        <p>{{ company_address }}</p>
+                        <p>{{ company_city }}</p>
+                        <p>VAT: {{ company_cvr }}</p>
+                        <p><strong>Your obligations and responsibilities:</strong></p>
+                        <p>– You are at least eighteen (18) years of age, or of the legal age of majority in your jurisdiction, and possess the legal authority, right and freedom to enter into the {{ app_name }} Terms and to form a binding agreement, for yourself or on behalf of the person or entity committed by you to the {{ app_name }} Terms.</p>
+                        <p>– You shall own all rights in and to any content uploaded by you, including any designs, images, videos, fonts, logos, illustrations, compositions, artworks, text, and any other materials or otherwise have the full power, title, licenses, consents and authority necessary to legally use, publish, transfer or license any and all rights and interests in and to such content.</p>
+                        <p>– The content is true, current, accurate, and in no way unlawful for you to possess, post, transmit or display in the country in which you or your User Website’s visitors and users reside.</p>
+                        <p>– You have obtained permissions required under all applicable laws, regarding the posting, transmission and publication of any personal information and/or image of any person, entity or property, which is part of the content;</p>
+                        <p><strong>Content and conduct rules and obligations</strong></p>
+                        <p>All information, data, text, software, music, sound, photographs, graphics, video, messages, goods, products, services or other materials you post on a web site via the {{ app_name }} services are the sole responsibility of the person from which such content originated. You are responsible for all content that you upload, post, transmit or otherwise make available via our service. We do not control the content you post via the service.</p>
+                        <p>The following content is not allowed: unlawful, harmful, threatening, abusive, harassing, tortuous, defamatory, vulgar, obscene, libelous, invasive of another’s privacy (up to, but not excluding any address, email, phone number, or any other contact information without the written consent of the owner of such information), hateful, or racially, ethnically or otherwise objectionable; is adult in nature, such as any nudity in a sexual context or any Content with adult themes; harm minors in any way; promote or provide instructional information about illegal activities, promote physical harm or injury against any group or individual, or promote any act of cruelty to animals. This may include, without limitation, providing instructions on how to assemble bombs, grenades and other weapons or incendiary devices, etc.</p>
+                        <p><strong>Billing and Payment information</strong></p>
+                        <p>It is your responsibility to ensure that your payment information is up to date. You agree to pay for the Services in advance of the time period during which such services are provided. Unless otherwise provided, you agree that until and unless you notify {{ app_name }} of your desire to cancel the Services, you will be billed on an automatically recurring basis to prevent any disruption to your Services, using your credit card or other billing information on file with us.</p>
+                        <p>{{ app_name }} does not store payment information. All payments are made through SSL encrypted connections, which ensures maximum safety for the transactions.</p>
+                        <p>You acknowledge and agree that any card and related billing and payment information that you provide will be shared by {{ app_name }} with a third party partner, such as: payment processor and/or acquirer.</p>
+                        <p>The registration it is usually done via campaign and it will start with a trial period of three days. Trail period is charged between EUR 1-20. The price varies accordingly to the campaign running on the website.</p>
+                        <p>If you do not withdraw at the time your trial expires, your card will be charged the amount chosen upon registration accordingly: EUR 69.</p>
+                        <p><strong>{{ app_name }} reserves the right to charge the following fees:</strong></p>
+                        <p>Basic Package: EUR 39/month</p>
+                        <p>Pro Package: EUR 69/month</p>
+                        <p>{{ app_name }} reserves the right to change its fees at any time, upon notice to you if such change may affect your existing or future subscriptions.</p>
+                        <p>– The cards accepted: Visa, MasterCard, Maestro, American Express, and Dinners Club.</p>
+                        <p><strong>New Credit Card</strong></p>
+                        <p>It is your responsibility to update your profile with your new card information. If {{ app_name }} will not be able to renew your subscription by charging the card, your subscription will be terminated. Writing an email to customer service can reactivate the subscription.</p>
+                        <p><strong>Cancellation</strong></p>
+                        <p>You may terminate or cancel the services by giving {{ app_name }} written notice via the email: {{ support_email }}</p>
+                        <p>You may discontinue to use and request to cancel your account and/or any {{ app_name }} services at any time.</p>
+                        <p>Once we receive your cancellation request and have confirmed all the necessary information, we will inform you in writing that your account has been canceled.</p>
+                        <p>The effective date and time for such cancellation shall be the date and time on which you have send the cancelation request.</p>
+                        <p>– Please note that the subscription can be also paused for unlimited time due to traveling/vacation, etc. For all further inquirers please include in your email following information: order numbers, customer number, full name and email address.</p>
+                        <p>After cancellation, you will no longer have access to your website and we may delete all information on your website. We accept no liability for such deleted information or content.</p>
+                        <p>– Please note that due to IT delay you might receive and email confirming your cancelation within the first 48 hours.</p>
+                        <p>&nbsp;</p>
+                        <p><strong>Anti-Money Laundering Policy</strong></p>
+                        <p>Be aware that {{ app_name }}'s business practices prohibit bribery, corrupt behavior and money laundering.</p>
+                        <p>You agree that you shall remain in compliance with all applicable laws that relate to commercial or public sector bribes, money laundering, terrorism (including but not limited to local anti-corruption laws, Canada’s Corruption of Foreign Public Officials Act, the U.S. Foreign Corrupt Practices Act, the OECD Convention on Combating Bribery of Foreign Public Officials in International Business Transactions and the U.K. Bribery Act).</p>
+                        <p>Should you at any point in time fail to be compliant, {{ app_name }} reserves the right to terminate your account without any notice.</p>
+                        <p><strong>Termination</strong></p>
+                        <p>{{ app_name }} may terminate your access to the services, in whole or in part, without notice in the event that:</p>
+                        <p>– You fail to pay any fees due</p>
+                        <p>– You violate this Agreement</p>
+                        <p>– Your conduct may harm {{ app_name }} or others</p>
+                        <p>In such event, {{ app_name }} shall not refund to you any fees paid in advance of such termination, and you shall be obligated to pay all fees and charges occured prior to the effectiveness of such termination.</p>
+                        <p>Please note: Upon termination of the services for any reason: user content, user websites, and other data will be deleted.</p>
+                        <p><strong>Return</strong></p>
+                        <p>Your purchase of {{ app_name }} is described as a subscription purchase and therefore you have the legal cancellation period of three days. You can only cancel your subscription if you have NOT taken your subscription in use within the three days. Your subscription will take you into use as soon as you make a purchase at one of our campaigns. Do you want to make use of the right of your cancellation please write immediately after your purchase to our customer service by email: {{ support_email }} and inform that you regret your purchase and wants to exercise the right of cancellation. Customer services will then help to cancel your subscription. All members start with a trial of three days. Within this period it is possible to cancel the subscription before it continues at full price. Payment for subscriptions is non-refundable, as the service is used immediately after purchase.</p>
+                        <p><strong>Privacy Policy</strong></p>
+                        <p>The privacy policy applies to {{ app_domain }} owned and operated by {{ company_name }}. This privacy policy, part of overall Terms and Conditions, covers personal information shared through {{ app_name }}. This privacy policy describes how we collect and use the personal information you provide on the website. It also describes the choices available to you regarding our use of your personal information and how you can access and update this information.</p>
+                        <p><strong>Customer service</strong></p>
+                        <p>A team of experts handles all users’ inquirers. Customer service is available by email and phone.</p>
+                        <p>Phone support is Monday to Friday {{ phone_time }} CET.</p>
+                        <p>You may contact customer service via following contact details: {{ support_email }}.</p>
+                        <p>It might take 48 hours on working days to answer your request due to IT delays. Customer service is closed during public holidays. Our customer service is well trained in our systems and can help you with everything from promotions, products or cancellation of subscriptions. If there are questions the individual customer service representative is not able to answer, another employee will get back to you as soon as possible with answers to your inquiry.</p>
+                        <p><strong>Your acceptance of Terms and Conditions</strong></p>
+                        <p>By using {{ app_name }} services, you signify your acceptance of this Terms and Conditions. If you do not agree with terms of services please do not use our site. Your continued use of {{ app_name }} services proves your awareness and acceptance of these Terms.</p>
+                        <p><strong>Contacting us</strong></p>
+                        <p>If you have any further inquirers about Privacy Policy, the practices of this site, or your dealings with {{ app_name }}’s site, please contact us at: {{ support_email }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if (iframe != true) %}
+        {% include '/_shared/_footer.html.twig' %}
+    {% endif %}
+{% endblock %}

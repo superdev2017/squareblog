@@ -1,0 +1,20 @@
+sonata_admin:
+    title: BlogCollectio
+    dashboard:
+        groups:
+            cms:
+                icon: <i class="fa fa-lg fa-fw fa fa-cogs"></i>
+                label: CMS
+                items:
+                    - sonata.admin.job
+            system:
+                icon: <i class="fa fa-lg fa-fw fa fa-cogs"></i>
+                label: Shop
+                items:
+                    - shop_user.admin.user
+
+sonata_block:
+    default_contexts: [cms]
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts:   [admin]

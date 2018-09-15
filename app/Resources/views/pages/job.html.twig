@@ -1,0 +1,25 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block title %}{{ job.name }}{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+
+    {% include '/_shared/_banner_message.html.twig' with {'headline': 'Join today', 'text': 'Create your personal Website'} %}
+    <div class="container content">
+        <div class="pages">
+            <div class="content-wrapper">
+                <h1 class="dsp-page-title">{{ job.name }}</h1>
+                <div class="lavish_date_content">
+                    <div class="features-wrap">
+                        {{ job.content|raw }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include '/_shared/_footer.html.twig' %}
+{% endblock %}

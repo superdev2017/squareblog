@@ -1,0 +1,28 @@
+{% block user_block %}
+    <li role="presentation" class="dropdown-header">
+        <i class="fa fa-lg fa-fw fa fa-eye"></i>
+        Navigation
+    </li>
+    <li role="presentation">
+        <a role="menuitem" tabindex="-1" href="{{ path('homepage') }}">Home</a>
+    </li>
+    {% if app.user and is_granted('ROLE_ADMIN') %}
+    {#
+    <li role="presentation">
+        <a role="menuitem" target="_blank" tabindex="-1" href="{{ path('BCCCronManagerBundle_index') }}">Cron Manager</a>
+    </li>
+    #}
+    {% endif %}
+    <li role="presentation">
+        <a role="menuitem" target="_blank" tabindex="-1" href="{{ path('jms_translation_index') }}">Translations</a>
+    </li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation" class="dropdown-header">
+        <i class="fa fa-lg fa-fw fa fa-cogs"></i>
+        User
+    </li>
+    <li role="presentation">
+        <a role="menuitem" tabindex="-1" href="{{ path('fos_user_security_logout') }}">Logout</a>
+    </li>
+
+{% endblock %}

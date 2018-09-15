@@ -1,0 +1,143 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain "pages" %}
+
+{% block title %}Contact{% endblock %}
+
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+
+    <!--contact-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="text-center section-heading">
+                        <h2>Get in touch</h2>
+                        <p>We’re here to help you with anything you need
+                        <br>You will find multiple ways to get in touch with us below.</p>
+                </div>
+            </div>
+            <div class="contact-details">
+                    <div class="contact col-md-4 text-center">
+                        <h4>Billing</h4>
+                        <p>Have any qestions about your billing? Please contact <a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
+                    </div>
+                    <div class="contact col-md-4 text-center">
+                        <h4>Technical</h4>
+                        <p>If you have any technical questions, please contact <a href="mailto:{{ support_email }}">{{ support_email }}</a>.<br>This includes technical errors or any other questions or issues you might have.</p>
+                    </div>
+                    <div class="contact col-md-4 text-center">
+                        <h4>Feedback</h4>
+                        <p>If you have any feedback, request for new features or possible plugin integration, please contact</p><a href="mailto:{{ support_email }}">{{ support_email }}</a>
+                    </div>
+                    <div class="contact col-md-4 text-center">
+                        <h4>Join the team</h4>
+                        <p>Want to work for us?<br> We are always looking for talented people. Send your application to:<br> <a href="mailto:{{ support_email }}">{{ support_email }}</a>.</p>
+                    </div>
+                    
+            </div>
+
+            <div class="contact-text text-center">
+                <p><h3>Find us on social Media:</h3></p>
+                <div class="social-menu-contact">
+                    <ul class="list-unstyled list-inline">
+                        <li class="fb">
+                             <a href="{{ facebook_profile }}" target="_blank"><i class="ion-social-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="twitter">
+                            <a href="{{ twitter_profile }}" target="_blank"><i class="ion-social-twitter" aria-hidden="true"></i> </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="{{ linkedin_profile }}" target="_blank"><i class="ion-social-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="pinterest">
+                            <a href="{{ pinterest_profile }}" target="_blank"><i class="ion-social-pinterest" aria-hidden="true"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="country-contact">
+                <div class="col-md-3">
+                    <img class="aligncenter" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/no.svg" alt="" width="80">
+                    <h4>Norway</h4>
+                    <h5><strong>Contact Our Support</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Email: </strong>{{ support_email }}</li>
+                        <li><strong>Phone: </strong>{{ support_phone }}</li>
+                        <li><strong>Opening hours: </strong><br>
+                                    Monday to Friday {{ phone_time }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img class="aligncenter" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/se.svg" alt="centralized02" width="80">
+                    <h4>Sweden</h4>
+                    <h5><strong>Contact Our Support</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Email: </strong>{{ support_email }}</li>
+                        <li><strong>Phone: </strong>{{ support_phone }}</li>
+                        <li>Opening hours: </strong><br>
+                            Monday to Friday {{ phone_time }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img class="aligncenter" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/fr.svg" alt="" width="80">
+                    <h4>France</h4>
+                    <h5><strong>Contact Our Support</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Email: </strong>{{ support_email }}</li>
+                        <li><strong>Phone: </strong>{{ support_phone }}</li>
+                        <li>Opening hours: </strong><br>
+                            Monday to Friday {{ phone_time }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img class="aligncenter" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/gb.svg" alt="" width="80">
+                    <h4>UK</h4>
+                    <h5><strong>Contact Our Support</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Email: </strong>{{ support_email }}</li>
+                        <li><strong>Phone: </strong>{{ support_phone }}</li>
+                        <li>Opening hours: </strong><br>
+                            Monday to Friday {{ phone_time }}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="form-area">
+                <h3 class="text-center">Get In Touch</h3>
+                <div class="col-md-6 col-md-offset-3 the-form">
+                    <form action="{{ path('contact') }}" method="POST">
+                        {{ form_start(contactForm) }}
+
+                        <div class="form-group col-md-12">
+                            <label class="control-label" for="name">Name</label>
+                           {{ form_widget(contactForm.name, { 'attr': {'class': 'input', 'id': 'name', 'placeholder': ''} }) }} 
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label" for="company">Company</label>
+                            {{ form_widget(contactForm.company, { 'attr': {'class': 'input', 'placeholder': ''} }) }}
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label" for="email">Email</label>
+                            {{ form_widget(contactForm.email, { 'attr': {'class': 'input', 'placeholder': ''} }) }}
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label" for="email">Phone</label>
+                            {{ form_widget(contactForm.phone, { 'attr': {'class': 'input', 'placeholder': ''} }) }}
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label class="control-label" for="email">Your Message</label>
+                            {{ form_widget(contactForm.message, { 'attr': {'class': '', 'placeholder': '', 'rows': '5', 'cols': '8'} }) }}
+                        </div>
+                        <br>
+                        <input type="submit" value="Send" class="btn btn-success btn-lg">
+
+                        {{ form_end(contactForm) }}
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include '/_shared/_footer.html.twig' %}
+{% endblock %}

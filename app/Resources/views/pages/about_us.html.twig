@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block title %}About us{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+    <div id="about" class="terms-page page">
+        <div class="container">
+            <div class="row">
+                <div class="text-center section-heading">
+                    <h2>About Us</h2>
+                    <p>We are proffessionals at what we do!</p>
+                </div>
+                <div class="row-flex about-content">
+                    <div id="about-img" class="col-md-6"></div>
+                    <div class="col-md-5 col-md-offset-1">
+                        <p>{{ app_name }} is a leading cloud-based website builder platform. Our goal is to let everyone no matter their skill level, create beautiful websites.
+                            <br>
+                            <br>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>All of our templates are tailored to meet specific customer demand and customer expectations.</p>
+                                </li>
+                                <li>
+                                    <p>We at {{ app_name }} have a high quality standard, and all of our software products are of high quality.</p>
+                                </li>
+                                <li>
+                                    <p>All of our packages offer technical support, server hosting, a sub-domain, and technical assistance.</p>
+                                </li>
+                            </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+    <!--Content Column-->
+    <section id="sign-up">
+        <div class="content-column clearfix">
+            <div class="container">
+                <div class="row">
+                    <!--Section Title-->
+                    <div class="col-md-8">
+                        <h2> Site builder</h2>
+                        <div class="text">As part of our service and included in the price we offer technical support, server hosting and assistance. Everything is build around making you able to build the best websites for your needs – with ease, comfort and the support you need. </div>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="{{ path('homepage') }}#pricing" class="btn btn-danger btn-lg pull-right">Sign Up Today</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    {% include '/_shared/_footer.html.twig' %}
+{% endblock %}

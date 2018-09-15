@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block title %}Return Policy{% endblock %}
+
+{% block body %}
+    {% if (iframe != true) %}
+        {% include '/_shared/_header.html.twig' %}
+    {% endif %}
+
+    <!--contact-->
+    <div id="contact" class="terms-page page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="pages crawler-target">
+                            <p>As a member of {{ app_name }} you will get unlimited access to our website builder. You can view and whichever template you want, design and build as many websites you want to. This is as long as you have the ‘professional subscription’ plan. {{ app_name }} is simply a place to make your dream website a reality within a short period of time. Have your websites live in no time.</p>
+                            <p></p>
+                            <p>Thank you for signing up at {{ app_name }}. If you are not entirely satisfied with your purchase, we’re here to help.</p>
+                            <p>When you signed up for {{ app_name }}, you agreed to a subscription, where the right of withdrawal only is valid upon entering into the agreement, and not in relation to the ongoing payments. If you have regret your purchase at {{ app_name }} or just wish to stop your membership, we urge you to contact the customer support as quick as possible. Persons who sign up with {{ app_name }} always receive a trial subscription, in order to try out the service before deciding if it meets the requirements of the user. The trial period costs a smaller amount not higher than €20,00, and the period for the trial period is 3 days.</p>
+                            <p>Upon startup the user gets access to the service and can use it, which is why the payment for the subscription cannot be refunded. In case you suspect, that you have been a victim of fraud, we strongly recommend you to contact our customer support, either by phone or email. All IPs and customer information will be traced and use for clarification of each case.</p>
+                            <p>Best regards,<br>
+                                <strong>{{ app_name }}</strong><br>
+                                <strong>Customer service</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if (iframe != true) %}
+        {% include '/_shared/_footer.html.twig' %}
+    {% endif %}
+{% endblock %}

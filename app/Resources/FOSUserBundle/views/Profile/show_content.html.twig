@@ -1,0 +1,12 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="credentials">
+    <h3 class="text-center uppercase"><strong>Information</strong></h3>
+    <div class="group">
+        <div class="table-cell line"></div>
+        <div class="table-cell line"></div>
+        <div class="table-cell line"></div>
+    </div>
+    <p>{{ 'profile.show.username'|trans }}: {{ user.username }}</p>
+    <p>{{ 'profile.show.email'|trans }}: {{ user.email }}</p>
+</div>

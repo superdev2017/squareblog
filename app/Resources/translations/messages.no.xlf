@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2017-01-14T22:13:26Z" source-language="en" target-language="no" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="0cc909be0f2da4ba1a41bb22abd333ee5d822722" resname="Invalid username or password.">
+        <source>Invalid username or password.</source>
+        <target>Invalid username or password.</target>
+        <jms:reference-file line="36">/../src/Shop/UserBundle/Security/Authenticator/UserAuthenticator.php</jms:reference-file>
+        <jms:reference-file line="60">/../src/Shop/UserBundle/Security/Authenticator/UserAuthenticator.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a113ddf22d9707803df45ffb9e03f1b267b5ecf5" resname="Your subscription has been canceled.">
+        <source>Your subscription has been canceled.</source>
+        <target>Your subscription has been canceled.</target>
+        <jms:reference-file line="48">/../src/Shop/UserBundle/Security/Authenticator/UserAuthenticator.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b41c296e7c53acf7e356ceefaadcaad665f1559f" resname="are.you.sure">
+        <source>are.you.sure</source>
+        <target>are.you.sure</target>
+        <jms:reference-file line="109">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="87175abc141ef93107f19760069f0e5949ddda64" resname="are.you.sure?">
+        <source>are.you.sure?</source>
+        <target>are.you.sure?</target>
+        <jms:reference-file line="119">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="da38860cb875cb64092e402d80d9fe29c4865b18" resname="close">
+        <source>close</source>
+        <target>close</target>
+        <jms:reference-file line="116">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d0c4047caa5bbe26ed27248a3fc325cb8b972f6b" resname="confirm">
+        <source>confirm</source>
+        <target>confirm</target>
+        <jms:reference-file line="110">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c9315a0197a2b92fdeab35def6378f334c9e0bd6" resname="contact.support">
+        <source>contact.support</source>
+        <target>contact.support</target>
+        <jms:reference-file line="121">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="07596f183f5e91b1778d5e47b2752b8d42aa763d" resname="disabled">
+        <source>disabled</source>
+        <target>disabled</target>
+        <jms:reference-file line="122">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="11f9578d05e6f7bb58a3cdd00107e9f4e3882671" resname="error">
+        <source>error</source>
+        <target>error</target>
+        <jms:reference-file line="115">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fd1286353570c5703799ba76999323b7c7447b06" resname="no">
+        <source>no</source>
+        <target>no</target>
+        <jms:reference-file line="111">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7a85f4764bbd6daf1c3545efbbf0f279a6dc0beb" resname="ok">
+        <source>ok</source>
+        <target>ok</target>
+        <jms:reference-file line="113">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="53a5687cb26dc41f2ab4033e97e13adefd3740d6" resname="success">
+        <source>success</source>
+        <target>success</target>
+        <jms:reference-file line="118">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a0d3f961e5bc19c6994061f0e3900bd7683a353c" resname="thank.you.for.contact.us.we.try.to.respond.within.24.hours">
+        <source>thank.you.for.contact.us.we.try.to.respond.within.24.hours</source>
+        <target>thank.you.for.contact.us.we.try.to.respond.within.24.hours</target>
+        <jms:reference-file line="116">/../src/App/CoreBundle/Controller/Front/PagesController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="081b654fe53fb954668078a390a72d94c56ac538" resname="there.was.an.error.canceling.your.subscription.please.contact.support">
+        <source>there.was.an.error.canceling.your.subscription.please.contact.support</source>
+        <target>there.was.an.error.canceling.your.subscription.please.contact.support</target>
+        <jms:reference-file line="117">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="65ec30d9a11ca94b06a01ef5a07e34fa1f7d49c9" resname="unknown.error.please.try.again">
+        <source>unknown.error.please.try.again</source>
+        <target>unknown.error.please.try.again</target>
+        <jms:reference-file line="123">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fb360f9c09ac8c5edb2f18be5de4e80ea4c430d0" resname="yes">
+        <source>yes</source>
+        <target>yes</target>
+        <jms:reference-file line="112">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6ceca2a94f75ce2f646d1acceda6401d8b36e8af" resname="you.will.get.%product_name%.on.%next_billing_date%.if.you.cancel.you.will.not.be.able.to.recover.your.account">
+        <source>you.will.get.%product_name%.on.%next_billing_date%.if.you.cancel.you.will.not.be.able.to.recover.your.account</source>
+        <target>you.will.get.%product_name%.on.%next_billing_date%.if.you.cancel.you.will.not.be.able.to.recover.your.account</target>
+        <jms:reference-file line="120">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="136bef369d213c2eb5dda72cbf8d66183c2648bd" resname="your.subscription.has.been.canceled">
+        <source>your.subscription.has.been.canceled</source>
+        <target>your.subscription.has.been.canceled</target>
+        <jms:reference-file line="114">/Resources/views/base.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

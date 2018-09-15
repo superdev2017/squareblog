@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block title %}Affiliate{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+
+    {% include '/_shared/_top_banner.html.twig' %}
+
+    <!--    Features container    -->
+    <div class="container-fluid affiliate page">
+        <div class="col-xs-12 purple-headers">
+            <h1>Become an affiliate partner!</h1>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-xs-12 feat-box">
+                    <div class="col-xs-12 col-md-3">
+                        <img src="{{ asset('images/theme/affiliate.png') }}" alt="device">
+                    </div>
+                    <div class="col-xs-12 col-md-9">
+                        <h2>Would you like to earn some money? We have a solution!</h2>
+                        <p>Become an {{ app_name }} affiliate and share the rewards of a growing brand with wide appeal. Partner up with us at {{ app_name }} and earn money by advertising our website building software on your website.</p>
+                        <h2>Your advantages as a {{ app_name }} partner:</h2>
+                        <ul>
+                            <li>&#10003; Up to 40% commission on the first sale</li>
+                            <li>&#10003; Our top publishers get attractive bonuses</li>
+                            <li>&#10003; Premium conditions possible</li>
+                            <li>&#10003; 14 day cookie lifetime</li>
+                            <li>&#10003; Low cancellation rates</li>
+                        </ul>
+                        <h2>How can I become an affiliate?<br>
+                            – It is very simple:</h2>
+                        <ul>
+                            <li>&#43; Register now at {{ app_name }} Affiliate</li>
+                            <li>&#43; Integrate the {{ app_name }} advertising media into your website</li>
+                            <li>&#43; Users click on the advertising media and get directed to {{ app_name }}</li>
+                            <li>&#43; You earn great commission!</li>
+                        </ul>
+                        <p>Any questions or comments regarding our {{ app_name }} affiliate partner program?</p>
+                        <p>Then do not hesitate to contact us at <a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 stars">
+                    <img src="{{ asset('images/theme/stars.png') }}" alt="stars">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include '/_shared/_footer.html.twig' %}
+{% endblock %}

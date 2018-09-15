@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2017-01-14T22:13:31Z" source-language="en" target-language="fi" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="5952d2c33bf58b10d07334d46331c3984db5492c" resname="congratulations.with.your.new.account.at">
+        <source>congratulations.with.your.new.account.at</source>
+        <target>congratulations.with.your.new.account.at</target>
+        <jms:reference-file line="8">/../src/Shop/UserBundle/Resources/views/email/User/welcome.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a88b7dcd1a9e3e17770bbaa6d7515b31a2d7e85d" resname="email">
+        <source>email</source>
+        <target>email</target>
+        <jms:reference-file line="82">/../src/Shop/UserBundle/Resources/views/email/User/welcome.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="78ffbbef3c747cf5ed9718e41c9b51568b88d655" resname="login.at">
+        <source>login.at</source>
+        <target>login.at</target>
+        <jms:reference-file line="90">/../src/Shop/UserBundle/Resources/views/email/User/welcome.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a6483fc650e64f03402a68ec1c6ae58728203f11" resname="login.details">
+        <source>login.details</source>
+        <target>login.details</target>
+        <jms:reference-file line="77">/../src/Shop/UserBundle/Resources/views/email/User/welcome.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8" resname="password">
+        <source>password</source>
+        <target>password</target>
+        <jms:reference-file line="86">/../src/Shop/UserBundle/Resources/views/email/User/welcome.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="194759d395b9ae56708dc956d4a945da734a3561" resname="questions.email">
+        <source>questions.email</source>
+        <target>questions.email</target>
+        <jms:reference-file line="104">/../src/Shop/UserBundle/Resources/views/email/User/welcome.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8579b022e8917be56f39dec90dcc1118be1bf84d" resname="thank.you.for.your.membership">
+        <source>thank.you.for.your.membership</source>
+        <target>thank.you.for.your.membership</target>
+        <jms:reference-file line="72">/../src/Shop/UserBundle/Resources/views/email/User/welcome.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="249ba36000029bbe97499c03db5a9001f6b734ec" resname="username">
+        <source>username</source>
+        <target>username</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2017-01-14T22:13:38Z" source-language="en" target-language="en" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="36f6c6dee53033aca384e15946a77e2600ba6685" resname="%product_name%.eyelash.serum.is.an.eyelash.serum.that.helps.you.get.natural.beautiful.eyelashes.without.mascara.">
+        <source>%product_name%.eyelash.serum.is.an.eyelash.serum.that.helps.you.get.natural.beautiful.eyelashes.without.mascara.</source>
+        <target>%product_name%.eyelash.serum.is.an.eyelash.serum.that.helps.you.get.natural.beautiful.eyelashes.without.mascara.</target>
+        <jms:reference-file line="278">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3ad84ef30bd694ee9af764f9e33f27ae7189f4da" resname="%product_name%.has.to.be.applied.twice.a.day…the.results.are.already.noticable.after.1.week.with.the.best.results.6.weeks.in.">
+        <source>%product_name%.has.to.be.applied.twice.a.day…the.results.are.already.noticable.after.1.week.with.the.best.results.6.weeks.in.</source>
+        <target>%product_name%.has.to.be.applied.twice.a.day…the.results.are.already.noticable.after.1.week.with.the.best.results.6.weeks.in.</target>
+        <jms:reference-file line="230">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a6dc2d26d7a111f9e8c962d103bfae04751306a2" resname="100%.sterile.solution">
+        <source>100%.sterile.solution</source>
+        <target>100%.sterile.solution</target>
+        <jms:reference-file line="160">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8fa1df470bdc77b1561061b1019a09a893464fbe" resname="50%.longer.lashes">
+        <source>50%.longer.lashes</source>
+        <target>50%.longer.lashes</target>
+        <jms:reference-file line="153">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7f2f6a15cf8da2b27e5a4af47b58e7ad71c0b3d9" resname="Error">
+        <source>Error</source>
+        <target>Error</target>
+        <jms:reference-file line="13">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+        <jms:reference-file line="48">/Resources/views/_shared/_messages.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4b631f69842530d659306c8f06dbad594a6b1807" resname="Info">
+        <source>Info</source>
+        <target>Info</target>
+        <jms:reference-file line="18">/Resources/views/_shared/_messages.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9bc2575c3930437e80555f78757b783c842e8e66" resname="Send">
+        <source>Send</source>
+        <target>Send</target>
+        <jms:reference-file line="28">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="42a8f651d79fd005eeac0612df6442b983a01184" resname="Success">
+        <source>Success</source>
+        <target>Success</target>
+        <jms:reference-file line="38">/Resources/views/_shared/_messages.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e9c45563358e813f157ba81b33143542165ba84e" resname="Warning">
+        <source>Warning</source>
+        <target>Warning</target>
+        <jms:reference-file line="28">/Resources/views/_shared/_messages.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ae7721c663235b5d998983b742eaf455e37c8eb0" resname="activating.serum.provides.active.lash.growth">
+        <source>activating.serum.provides.active.lash.growth</source>
+        <target>activating.serum.provides.active.lash.growth</target>
+        <jms:reference-file line="84">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c662180230cad14787d4ab7e77aa08681ce783fa" resname="address">
+        <source>address</source>
+        <target>address</target>
+        <jms:reference-file line="78">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2b783911cd2a9562816176868ab33e00419bc23f" resname="after.application.let.the.serum.dry.for.up.to.5 minutes…do.not.scratch.your.eyes.or.the.like.as this.impairs.the.effect.">
+        <source>after.application.let.the.serum.dry.for.up.to.5 minutes…do.not.scratch.your.eyes.or.the.like.as this.impairs.the.effect.</source>
+        <target>after.application.let.the.serum.dry.for.up.to.5 minutes…do.not.scratch.your.eyes.or.the.like.as this.impairs.the.effect.</target>
+        <jms:reference-file line="223">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="39c4712aacfdaa35f3a8d6fff7bc187306c4fada" resname="all.girls.are.entitled.to.two.things">
+        <source>all.girls.are.entitled.to.two.things</source>
+        <target>all.girls.are.entitled.to.two.things</target>
+        <jms:reference-file line="31">/Resources/views/pages/index.html.twig</jms:reference-file>
+        <jms:reference-file line="45">/Resources/views/pages/index.html.twig</jms:reference-file>
+        <jms:reference-file line="59">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0b121cf4892ab0a5e07805b41d12a680bd9a25e0" resname="already.a.member.yet?">
+        <source>already.a.member.yet?</source>
+        <target>already.a.member.yet?</target>
+      </trans-unit>
+      <trans-unit id="a1903e7cbdeff459e17288ec8e6b2d925c196493" resname="already.a.member?">
+        <source>already.a.member?</source>
+        <target>already.a.member?</target>
+        <jms:reference-file line="19">/Resources/FOSUserBundle/views/Resetting/request_content.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="69f45da1683c501696ebfa086d25192af3807dc6" resname="apply">
+        <source>apply</source>
+        <target>apply</target>
+        <jms:reference-file line="215">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2e0c77d9659ae623c0b46d2dc41e0f883d6bd5e7" resname="apply.it.just.as.you.apply.your.liquid.eyelinger.with.a.stroke.on.the.upper.lash.line...let.it.dry.and.soon.you.will.begin.to.see.results.">
+        <source>apply.it.just.as.you.apply.your.liquid.eyelinger.with.a.stroke.on.the.upper.lash.line...let.it.dry.and.soon.you.will.begin.to.see.results.</source>
+        <target>apply.it.just.as.you.apply.your.liquid.eyelinger.with.a.stroke.on.the.upper.lash.line...let.it.dry.and.soon.you.will.begin.to.see.results.</target>
+        <jms:reference-file line="148">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="42496ae130c6cb1e00f62227a07753ece9112e0d" resname="apply.the.serum.on.the.upper.lash.line.and.let.it.dry.-.best.in.the.evening.after.cleansing.the.eye.area...a.brush.strokes.is.enough.">
+        <source>apply.the.serum.on.the.upper.lash.line.and.let.it.dry.-.best.in.the.evening.after.cleansing.the.eye.area...a.brush.strokes.is.enough.</source>
+        <target>apply.the.serum.on.the.upper.lash.line.and.let.it.dry.-.best.in.the.evening.after.cleansing.the.eye.area...a.brush.strokes.is.enough.</target>
+        <jms:reference-file line="216">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="551dbefe4bd7da7dac4ba2b62ab33e13126ebed1" resname="before.and.after.use">
+        <source>before.and.after.use</source>
+        <target>before.and.after.use</target>
+        <jms:reference-file line="236">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0d5bf80fcb36002e7032b79fbd5c5b5a141193ee" resname="buy.now">
+        <source>buy.now</source>
+        <target>buy.now</target>
+        <jms:reference-file line="89">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4fd0653c4f2aef3b19a3c145bbdc5f4740715a09" resname="cancel">
+        <source>cancel</source>
+        <target>cancel</target>
+        <jms:reference-file line="235">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2c54892c40a1751663d9aca4e03e6a833056bc9f" resname="city">
+        <source>city</source>
+        <target>city</target>
+        <jms:reference-file line="114">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="71b21161ffa1e6516bcc072aaf5ef38cbe85b511" resname="company">
+        <source>company</source>
+        <target>company</target>
+        <jms:reference-file line="24">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1a73af9e7ae00182733b2292511b814be66f065f" resname="contact">
+        <source>contact</source>
+        <target>contact</target>
+        <jms:reference-file line="24">/Resources/views/_shared/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0d8713059e21605986519bb80013cc9fc40bbc02" resname="contact.info">
+        <source>contact.info</source>
+        <target>contact.info</target>
+        <jms:reference-file line="36">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="580ed3de83feef59d81e3de004967a1b876d6962" resname="contact.us">
+        <source>contact.us</source>
+        <target>contact.us</target>
+        <jms:reference-file line="11">/Resources/views/_shared/_footer.html.twig</jms:reference-file>
+        <jms:reference-file line="19">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9151163c0fc1de04cd6869351355711dfd6096d6" resname="created.at">
+        <source>created.at</source>
+        <target>created.at</target>
+        <jms:reference-file line="30">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="8088df1a4eff4dc17165d6f8dcd0136c09b34122" resname="does.not.strain.the.eyes">
+        <source>does.not.strain.the.eyes</source>
+        <target>does.not.strain.the.eyes</target>
+        <jms:reference-file line="161">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="a88b7dcd1a9e3e17770bbaa6d7515b31a2d7e85d" resname="email">
+        <source>email</source>
+        <target>email</target>
+        <jms:reference-file line="19">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+        <jms:reference-file line="25">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="11f9578d05e6f7bb58a3cdd00107e9f4e3882671" resname="error">
+        <source>error</source>
+        <target>error</target>
+        <jms:reference-file line="110">/Resources/views/user/account.html.twig</jms:reference-file>
+        <jms:reference-file line="128">/Resources/views/user/account.html.twig</jms:reference-file>
+        <jms:reference-file line="166">/Resources/views/user/account.html.twig</jms:reference-file>
+        <jms:reference-file line="56">/Resources/views/user/account.html.twig</jms:reference-file>
+        <jms:reference-file line="74">/Resources/views/user/account.html.twig</jms:reference-file>
+        <jms:reference-file line="92">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b90698d70145a99ddfcb06fabb9a0a157117f7cb" resname="exceptional.%product_name%.offer">
+        <source>exceptional.%product_name%.offer</source>
+        <target>exceptional.%product_name%.offer</target>
+        <jms:reference-file line="81">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="420da83311fa580ad5ddbf6433fcac2078aff077" resname="expected.arrival">
+        <source>expected.arrival</source>
+        <target>expected.arrival</target>
+        <jms:reference-file line="28">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b74ce203d22935a28e1b5bf0a9b1b1930056f72f" resname="finally.you.can.have.the.lashes.you've.longed.for.with.more.volume.length.and.new.life.%product_name%.activating.serum.provides.active.growth.for.your.lashes.">
+        <source>finally.you.can.have.the.lashes.you've.longed.for.with.more.volume.length.and.new.life.%product_name%.activating.serum.provides.active.growth.for.your.lashes.</source>
+        <target>finally.you.can.have.the.lashes.you've.longed.for.with.more.volume.length.and.new.life.%product_name%.activating.serum.provides.active.growth.for.your.lashes.</target>
+        <jms:reference-file line="131">/Resources/views/pages/index.html.twig</jms:reference-file>
+        <jms:reference-file line="5">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="407004ca4b2231ca02e81ecb048f2d7d21524fcf" resname="first.name">
+        <source>first.name</source>
+        <target>first.name</target>
+        <jms:reference-file line="42">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b6447362213fe4be29ead6c1ea5f4469a9cbebc9" resname="forgot.password?">
+        <source>forgot.password?</source>
+        <target>forgot.password?</target>
+        <jms:reference-file line="37">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b7c8e339416332c29e386a95a0ef4e8023c75ed9" resname="frequently.asked.questions">
+        <source>frequently.asked.questions</source>
+        <target>frequently.asked.questions</target>
+        <jms:reference-file line="262">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="bac7282e247745f4761a64b31876c4d6d3f1033d" resname="front.page">
+        <source>front.page</source>
+        <target>front.page</target>
+        <jms:reference-file line="21">/Resources/views/_shared/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0e0dfc254b90799a809458d1d7aa472c71a41308" resname="get.healthier.smoother.and.longer.lashes.instantly">
+        <source>get.healthier.smoother.and.longer.lashes.instantly</source>
+        <target>get.healthier.smoother.and.longer.lashes.instantly</target>
+        <jms:reference-file line="86">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="044fb31ddae83de30a479b567e5ff0437c907529" resname="guaranteed.effect">
+        <source>guaranteed.effect</source>
+        <target>guaranteed.effect</target>
+        <jms:reference-file line="167">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0b645ba20deb3fa642eed645d29eec7586842b18" resname="here.you.can.view.your.orders">
+        <source>here.you.can.view.your.orders</source>
+        <target>here.you.can.view.your.orders</target>
+        <jms:reference-file line="12">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fdb670f40cee55585ccbdba9da5b0fa36c11b882" resname="how.it.works">
+        <source>how.it.works</source>
+        <target>how.it.works</target>
+        <jms:reference-file line="209">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="1100c94e674bae5af8c625fe38c085980b93c4a1" resname="how.to.use.%product_name%.eyelash.serum">
+        <source>how.to.use.%product_name%.eyelash.serum</source>
+        <target>how.to.use.%product_name%.eyelash.serum</target>
+        <jms:reference-file line="147">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="56b51222e08805a96677880ca7f88340b27cef1d" resname="if.you.have.any.questions.regarding.our.campaigns.product.or.any.other.things.you.can.always.contact.us.via.the.below.mentioned.contact.form">
+        <source>if.you.have.any.questions.regarding.our.campaigns.product.or.any.other.things.you.can.always.contact.us.via.the.below.mentioned.contact.form</source>
+        <target>if.you.have.any.questions.regarding.our.campaigns.product.or.any.other.things.you.can.always.contact.us.via.the.below.mentioned.contact.form</target>
+        <jms:reference-file line="11">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fc672b49ce401d5a638e77bb0c204a4044f2dd5a" resname="in.just.14.days">
+        <source>in.just.14.days</source>
+        <target>in.just.14.days</target>
+        <jms:reference-file line="168">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ba1fd5562221942f5f7a0e7c394d27d5078f040b" resname="in.just.30.days">
+        <source>in.just.30.days</source>
+        <target>in.just.30.days</target>
+        <jms:reference-file line="154">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="33677fa505e1c4021e7cb56974ed383d65993479" resname="in.order.for.us.to.assist.you.in.the.best.possible.manner.please.make.sure.you.use.the.same.email.for.contacting.us.that.you.used.to.sign.up">
+        <source>in.order.for.us.to.assist.you.in.the.best.possible.manner.please.make.sure.you.use.the.same.email.for.contacting.us.that.you.used.to.sign.up</source>
+        <target>in.order.for.us.to.assist.you.in.the.best.possible.manner.please.make.sure.you.use.the.same.email.for.contacting.us.that.you.used.to.sign.up</target>
+        <jms:reference-file line="13">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="84f4675c98d93edd17ec2f6ed54e9f3ee1086612" resname="interval">
+        <source>interval</source>
+        <target>interval</target>
+        <jms:reference-file line="213">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e11523c5ff23fc1600aca2d8ee5adb542c5ce4b3" resname="language">
+        <source>language</source>
+        <target>language</target>
+      </trans-unit>
+      <trans-unit id="a52f641322a1f1443d4b4131a3a791df04b97cd6" resname="last.name">
+        <source>last.name</source>
+        <target>last.name</target>
+        <jms:reference-file line="60">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7bc3493608a58361f049d4b82e6fcef06b116e27" resname="log.in">
+        <source>log.in</source>
+        <target>log.in</target>
+        <jms:reference-file line="20">/Resources/FOSUserBundle/views/Resetting/request_content.html.twig</jms:reference-file>
+        <jms:reference-file line="4">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+        <jms:reference-file line="58">/Resources/views/_shared/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="91dc382e09cd60be9b575fd8fd93f858d8b04bfe" resname="log.me.in">
+        <source>log.me.in</source>
+        <target>log.me.in</target>
+        <jms:reference-file line="41">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="55525e1b3dfd8787fd202aed45fb04494e3242d0" resname="logout">
+        <source>logout</source>
+        <target>logout</target>
+        <jms:reference-file line="54">/Resources/views/_shared/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="19702ca532034b63435453edec6a3dd26ec0d8c8" resname="long.lush.lashes.!">
+        <source>long.lush.lashes.!</source>
+        <target>long.lush.lashes.!</target>
+        <jms:reference-file line="32">/Resources/views/pages/index.html.twig</jms:reference-file>
+        <jms:reference-file line="46">/Resources/views/pages/index.html.twig</jms:reference-file>
+        <jms:reference-file line="60">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6f9b9af3cd6e8b8a73c2cdced37fe9f59226e27d" resname="message">
+        <source>message</source>
+        <target>message</target>
+        <jms:reference-file line="27">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="e3eb884729d19fe124fab498d7f61bc214c27c1e" resname="monday.-.friday">
+        <source>monday.-.friday</source>
+        <target>monday.-.friday</target>
+        <jms:reference-file line="75">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4cd77d42e1f05990dbe378bdb937bd690ca7ba91" resname="money.back.guarantee.!">
+        <source>money.back.guarantee.!</source>
+        <target>money.back.guarantee.!</target>
+        <jms:reference-file line="277">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="0239b97300b02e7a889e53b6a16ca76684546e89" resname="my.account">
+        <source>my.account</source>
+        <target>my.account</target>
+        <jms:reference-file line="42">/Resources/views/_shared/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="47">/Resources/views/_shared/_header.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6da9a566c9be33376eca31d33075902d8a791fd1" resname="my.orders">
+        <source>my.orders</source>
+        <target>my.orders</target>
+        <jms:reference-file line="50">/Resources/views/_shared/_header.html.twig</jms:reference-file>
+        <jms:reference-file line="11">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="6ae999552a0d2dca14d62e2bc8b764d377b1dd6c" resname="name">
+        <source>name</source>
+        <target>name</target>
+        <jms:reference-file line="23">/Resources/views/pages/contact.html.twig</jms:reference-file>
+        <jms:reference-file line="197">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="3ada435672d19daa0ae28fd407835b6af4795656" resname="next.billing.date">
+        <source>next.billing.date</source>
+        <target>next.billing.date</target>
+        <jms:reference-file line="217">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="df35366ecf3f45724064a3eaf9390d767976991e" resname="not.a.member.yet?">
+        <source>not.a.member.yet?</source>
+        <target>not.a.member.yet?</target>
+        <jms:reference-file line="48">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f9415213ee8fe7c5e1a7c9ee6040b30776ef10f8" resname="opening.hours">
+        <source>opening.hours</source>
+        <target>opening.hours</target>
+        <jms:reference-file line="75">/Resources/views/pages/contact.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c5e2bd2e25dd250eaa5b028fed01a9a5aa975844" resname="order.id">
+        <source>order.id</source>
+        <target>order.id</target>
+        <jms:reference-file line="22">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="13bba369135db1b8ce7d4df5fd835f5177410191" resname="order.today.and.get.receive.it.tomorrow">
+        <source>order.today.and.get.receive.it.tomorrow</source>
+        <target>order.today.and.get.receive.it.tomorrow</target>
+        <jms:reference-file line="87">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9658403816409e66eba2175f8eff8b53a9681573" resname="orders">
+        <source>orders</source>
+        <target>orders</target>
+        <jms:reference-file line="4">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d6275e014279de76461541c8fabcea040037439c" resname="our.customers.love.us">
+        <source>our.customers.love.us</source>
+        <target>our.customers.love.us</target>
+        <jms:reference-file line="186">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8" resname="password">
+        <source>password</source>
+        <target>password</target>
+        <jms:reference-file line="24">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="f6be6ca910984ef05a237a180d464ceb8847c14a" resname="phone">
+        <source>phone</source>
+        <target>phone</target>
+        <jms:reference-file line="26">/Resources/views/pages/contact.html.twig</jms:reference-file>
+        <jms:reference-file line="153">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5de41cff09122608f8a536705259a7bb829c1224" resname="postcode">
+        <source>postcode</source>
+        <target>postcode</target>
+        <jms:reference-file line="96">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2097c33723b61c7e24d3d7d27840469989b61b49" resname="price">
+        <source>price</source>
+        <target>price</target>
+        <jms:reference-file line="82">/Resources/views/pages/index.html.twig</jms:reference-file>
+        <jms:reference-file line="209">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="029560de180e5be0aacaf91936913e420260929d" resname="privacy.policy">
+        <source>privacy.policy</source>
+        <target>privacy.policy</target>
+        <jms:reference-file line="14">/Resources/views/_shared/_footer.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="38a007151abe87cc01a5b6e9cc418e85286e2087" resname="product">
+        <source>product</source>
+        <target>product</target>
+        <jms:reference-file line="23">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="fff4b3c562e7edda5c8dc2621ddd39fe5072a523" resname="questions.?">
+        <source>questions.?</source>
+        <target>questions.?</target>
+        <jms:reference-file line="221">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b9adff7168566b6438e35176c632b79695afa4ec" resname="remember.me">
+        <source>remember.me</source>
+        <target>remember.me</target>
+        <jms:reference-file line="33">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c0ac4842418e34583859262c033965cfd49454e0" resname="repeat">
+        <source>repeat</source>
+        <target>repeat</target>
+        <jms:reference-file line="229">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="2d528c3e0b9bf49548696322f4d094fcec4f207b" resname="reset.password">
+        <source>reset.password</source>
+        <target>reset.password</target>
+        <jms:reference-file line="9">/Resources/FOSUserBundle/views/ChangePassword/change_password_content.html.twig</jms:reference-file>
+        <jms:reference-file line="7">/Resources/FOSUserBundle/views/Resetting/check_email.html.twig</jms:reference-file>
+        <jms:reference-file line="3">/Resources/FOSUserBundle/views/Resetting/request_content.html.twig</jms:reference-file>
+        <jms:reference-file line="3">/Resources/FOSUserBundle/views/Resetting/reset_content.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="deb1602eff3d6ab23777d98bb142a3052e7c978b" resname="return.policy">
+        <source>return.policy</source>
+        <target>return.policy</target>
+        <jms:reference-file line="13">/Resources/views/_shared/_footer.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="c5c3d42972ea73de308c7692f68b819cec3c12fa" resname="save.changes">
+        <source>save.changes</source>
+        <target>save.changes</target>
+        <jms:reference-file line="175">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="116ebf4d0492d37a8db45951524bf19ae2aa1619" resname="shipped">
+        <source>shipped</source>
+        <target>shipped</target>
+        <jms:reference-file line="27">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="4367781a8fa70b60a9c6df8383645879077ab736" resname="sign.up">
+        <source>sign.up</source>
+        <target>sign.up</target>
+        <jms:reference-file line="49">/Resources/FOSUserBundle/views/Security/login_content.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="48a3661d846478fa991a825ebd10b78671444b5b" resname="status">
+        <source>status</source>
+        <target>status</target>
+        <jms:reference-file line="205">/Resources/views/user/account.html.twig</jms:reference-file>
+        <jms:reference-file line="26">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="dbb4470f690708d2b8e95554479f600d5845f278" resname="strengthens.lashes.and.prolongs.their.lifetime">
+        <source>strengthens.lashes.and.prolongs.their.lifetime</source>
+        <target>strengthens.lashes.and.prolongs.their.lifetime</target>
+        <jms:reference-file line="85">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="7fa70a0b2b27efc9087b54531a3c320f51938fcf" resname="subscription.number">
+        <source>subscription.number</source>
+        <target>subscription.number</target>
+        <jms:reference-file line="186">/Resources/views/user/account.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ce620d6749880d79c700eb0ae2a56646f3a59bc5" resname="terms">
+        <source>terms</source>
+        <target>terms</target>
+        <jms:reference-file line="5">/Resources/views/pages/terms.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="9fec8133fa0f7ed09dc58e914aa891ea2e1922ba" resname="terms.and.conditions">
+        <source>terms.and.conditions</source>
+        <target>terms.and.conditions</target>
+        <jms:reference-file line="12">/Resources/views/_shared/_footer.html.twig</jms:reference-file>
+        <jms:reference-file line="13">/Resources/views/pages/terms.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d25cad60d1c244131294658155f68609543b3e29" resname="terms.and.protection.of.personal.data">
+        <source>terms.and.protection.of.personal.data</source>
+        <target>terms.and.protection.of.personal.data</target>
+        <jms:reference-file line="14">/Resources/views/pages/terms.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5a537e209151ae5fcccd6326b34b5622bcfb0578" resname="total">
+        <source>total</source>
+        <target>total</target>
+        <jms:reference-file line="25">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="29608daff1b9ffaa21173cc816d1442047eee722" resname="tracking.code">
+        <source>tracking.code</source>
+        <target>tracking.code</target>
+        <jms:reference-file line="29">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="ce2bdfee7c3cbe0e6c00a6cace48ba6f815a6df2" resname="try.%product_name%.now">
+        <source>try.%product_name%.now</source>
+        <target>try.%product_name%.now</target>
+        <jms:reference-file line="135">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="d0a3e7f81a9885e99049d1cae0336d269d5e47a9" resname="type">
+        <source>type</source>
+        <target>type</target>
+        <jms:reference-file line="201">/Resources/views/user/account.html.twig</jms:reference-file>
+        <jms:reference-file line="24">/Resources/views/user/orders.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="55c7d903370b3358ff5ecdea200f629eb42c7275" resname="unique.ingredients.make.this.highly.effective.serum.breath.fresh.life.in.to.your.lashes.which.gives.them.a.fuller.look.">
+        <source>unique.ingredients.make.this.highly.effective.serum.breath.fresh.life.in.to.your.lashes.which.gives.them.a.fuller.look.</source>
+        <target>unique.ingredients.make.this.highly.effective.serum.breath.fresh.life.in.to.your.lashes.which.gives.them.a.fuller.look.</target>
+        <jms:reference-file line="133">/Resources/views/pages/index.html.twig</jms:reference-file>
+        <jms:reference-file line="6">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="b944aeb43b37448d679a9afd69c6e5b490709a4f" resname="unknown.error.occurred.please.try.again">
+        <source>unknown.error.occurred.please.try.again</source>
+        <target>unknown.error.occurred.please.try.again</target>
+        <jms:reference-file line="37">/../src/Shop/UserBundle/Controller/Front/UserController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="daaad336276d15594d0e765f96c17cd746bf4971" resname="wait">
+        <source>wait</source>
+        <target>wait</target>
+        <jms:reference-file line="222">/Resources/views/pages/index.html.twig</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,78 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block title %}Privacy{% endblock %}
+
+{% block body %}
+    {% if (iframe != true) %}
+        {% include '/_shared/_header.html.twig' %}
+    {% endif %}
+    <!--contact-->
+    <div id="contact" class="terms-page page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="pages crawler-target">
+                        <p>The privacy policy applies to {{ app_domain }} owned and operated by {{ company_name }}. This privacy policy, part of overall Terms and Conditions, covers personal information shared through {{ app_name }}. This privacy policy describes how we collect and use the personal information you provide on the website. It also describes the choices available to you regarding our use of your personal information and how you can access and update this information.</p>
+                        <p><strong>About company</strong></p>
+                        <p>{{ company_name }}</p>
+                        <p>{{ company_address }}</p>
+                        <p>{{ company_city }}</p>
+                        <p>E-mail: {{ support_email }}</p>
+                        <p>VAT: {{ company_cvr }}</p>
+                        <p>{{ app_name }} will not sell, lease, or exchange your personal data to, or otherwise share your personal data with, third parties in ways other than described in this Privacy Policy. By using {{ app_name }}, including services available at the {{ app_domain }}, you are using a service provided by {{ company_name }} and you agree to be bound by the Terms of Service and this Privacy Policy.</p>
+                        <ol>
+                            <li><strong>INFORMATION</strong></li>
+                        </ol>
+                        <p><strong>1.1. Personal Information</strong></p>
+                        <p>{{ app_name }} may collect personal information in order to provide you with a service that allows you to maintain an online presence. Your information may be used when sending the welcome gift. We also may use and disclose your information to our third party service providers in order to offer you a secure and comfortable payment environment.</p>
+                        <p><strong>1.2. Information security</strong></p>
+                        <p>We store all membership information in secure CRM system protected via a variety of industry standard access controls. {{ app_name }} does not store payment information. It will use a professional third party partner to offer SSL encryption and other measures to help us protect your financial data.</p>
+                        <p><strong>1.3. Changing Information</strong></p>
+                        <p>All information that {{ app_name }} collects is accessible through your personal account, including any subscription billing information. You may use your personal access to correct, update or delete your information at any time, and we encourage you to keep this information up to date so that your customer service requests and billing processes operate efficiently. We will respond to your request to access within 3 business days.</p>
+                        <p><strong>1.4. Removing Information/Cancelation</strong></p>
+                        <p>To remove your personal information from our system, submit your account for cancelation. Your personal information will be removed immediately, though your actual account access. If you wish to only remove your billing subscription information, cancel your paid account by sending a cancel request to customer services email. Your cancelation will come into force from the moment the customer service receives your email. To answer you cancelation request it might take up to 48 hours due to IT delays.</p>
+                        <ol start="2">
+                            <li><strong>Registration</strong></li>
+                        </ol>
+                        <p>The {{ app_name }} service requires a login in order to provide you with a personalized account. During our account registration process, you must provide all the information needed in order to obtain an account. After completing the registration form, you will receive a welcome email describing your new {{ app_name }} account, and how to access that account.</p>
+                        <ol start="3">
+                            <li><strong>Account Subscriptions</strong></li>
+                        </ol>
+                        <p>If you choose to continue service with {{ app_name }} via a paid account, {{ app_name }} will collect the following personal information from you: credit card number, credit card expiration date, and zip code, and keep this information on file in our secure server in order to process your recurring invoices. Upon discontinuation of {{ app_name }} service, your credit card information will be destroyed on our billing system. If we are unable to process your subscription for a given month, this information, along with your account information, may be used to contact you.</p>
+                        <ol start="4">
+                            <li><strong>Communication with {{ app_name }}</strong></li>
+                        </ol>
+                        <p>We have a qualified and experienced customer services team to assist us in managing and administrate communication and emails sent to us.</p>
+                        <ol start="5">
+                            <li><strong>Third Party Payment Processors</strong></li>
+                        </ol>
+                        <p>{{ app_name }} employs third party payment partner to perform functions on our behalf. Examples include credit card processing, SSL encryption of payment information offering our users a secure and comfortable payment experience. Such third party partner use of your personal information is governed by their respective privacy policies.</p>
+                        <ol start="6">
+                            <li><strong>Advertising</strong></li>
+                        </ol>
+                        <p>Advertising partners, who may set cookies, may deliver ads appearing on our site. These cookies allow the ad server to recognize your computer each time they send you an online advertisement to compile non-personal identification information about you or others who use your computer. This information allows ad networks to, among other things, deliver targeted advertisements that they believe will be of most interest to you. This privacy policy does not cover the use of cookies by any advertisers.</p>
+                        <ol start="7">
+                            <li><strong>COOKIES</strong></li>
+                        </ol>
+                        <p>Our Site may use “cookies” to enhance User experience. User’s web browser places cookies on their hard drive for record-keeping purposes and sometimes to track information about them. Users can control the use of cookies at the individual browser level. If you reject cookies, you may still use our website, but your ability to use some features or areas of our website may be limited.</p>
+                        <ol start="8">
+                            <li><strong>Changes in Privacy Policy</strong></li>
+                        </ol>
+                        <p>We reserve the right to modify/update this Privacy Policy at any time, so please review it frequently. You acknowledge and agree that it is your responsibility to review this privacy policy periodically and become aware of modifications.</p>
+                        <ol start="9">
+                            <li><strong>Your acceptance of Privacy Policy</strong></li>
+                        </ol>
+                        <p>By using {{ app_name }} services, you signify your acceptance of this Privacy Policy and Terms of service. If you do not agree to this policy, please do not access our services. Your continued use of the Site following the awareness and acceptance of this Private Policy.</p>
+                        <p><strong>Contacting us</strong></p>
+                        <p>If you have any further inquirers about Privacy Policy, the practices of this site, or your dealings with {{ app_name }}’s site, please contact us at: {{ support_email }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% if (iframe != true) %}
+        {% include '/_shared/_footer.html.twig' %}
+    {% endif %}
+{% endblock %}

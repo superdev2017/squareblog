@@ -1,0 +1,116 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain "pages" %}
+
+{% block title %}Why was i billed?{% endblock %}
+
+{% block stylesheets %}
+    <style type="text/css">
+        .question p.headline {
+            font-weight: 500;
+            margin-bottom: 0;
+            font-size: 20px;
+        }
+        .question p.text {
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+        a:hover {
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 26px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+    <div id="contact" class="terms-page page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="pages crawler-target">
+                        <h1>Why do i see {{ app_name }}.com/b on my credit card bill?</h1>
+                        <p>
+                            If you see {{ app_domain }}/charge on your credit card statement, you have used your credit card to sign up to {{ app_name }}.
+                            You should have received an email containing your login credentials.
+                        </p>
+                        <p>
+                            {{ app_name }} is owned and operated by {{ company_name }}.
+                        </p>
+                        <p>
+                            If you have any questions regarding your account or any other thing, you can always contact us via the below mentioned contact information.<br>
+                            In order for us to assist you in the best possible way, please reference a order id, a subscription id or the email you used to sign up with.<br>
+                            <br>
+                            Email: {{ support_email }}<br>
+                            Phone: {{ support_phone }}<br>
+                            Hours: Monday - Friday {{ phone_time }} CET.
+                        </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <hr style="display: inline-block; float: left; width: 100%">
+                        </div>
+                        <div class="col-xs-12">
+                            <h2>Frequently asked questions</h2>
+                            <div class="question">
+                                <p class="headline">
+                                    How do I cancel my account?
+                                </p>
+                                <p class="text">
+                                    You can cancel your account at any time. Just log into your account, click the “My Account -> <a href="{{ path('shop_user_account') }}" target="_blank">Account</a>” tab, and click the red "X" button to cancel your account.<br>
+                                    You can also email our support at {{ support_email }}, please use the same email as you signed up with.<br>
+                                    Once you’ve cancelled you won’t be charged again, but you are responsible for all previously incurred charges.
+                                </p>
+                            </div>
+                            <div class="question">
+                                <p class="headline">
+                                    What is {{ app_name }}?
+                                </p>
+                                <p class="text">
+                                    We’re a small software company based in {{ company_city }}, {{ company_country }} that makes website builder software that lets anyone build their own website.
+                                    We’ve been in business since 2016.
+                                </p>
+                            </div>
+                            <div class="question">
+                                <p class="headline">
+                                    Can i get a refund?
+                                </p>
+                                <p class="text">
+                                    Charges are non-refundable, but once you cancel you will never be charged again.<br>
+                                    We don’t have long-term contracts, lock-in, signup or termination fees. <br>
+                                    Just pay as you go and cancel when you’re done. Please see the <a href="{{ path('terms') }}" target="_blank">terms & conditions</a> for further details.
+                                </p>
+                            </div>
+                            <div class="question">
+                                <p class="headline">
+                                    Can i get an invoice for the charges?
+                                </p>
+                                <p class="text">
+                                    Every time we bill you, an invoice becomes accessible under "My Account -> <a href="{{ path('shop_user_orders') }}" target="_blank">Orders</a>".
+                                </p>
+                            </div>
+                            <div class="question">
+                                <p class="headline">
+                                    Any other questions?
+                                </p>
+                                <p class="text">
+                                    Feel free to contact us by Phone or by Email.<br>
+                                    Email: {{ support_email }}<br>
+                                    Phone: {{ support_phone }}<br>
+                                    Hours: Monday - Friday {{ phone_time }} CET.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include '/_shared/_footer.html.twig' %}
+
+{% endblock %}

@@ -1,0 +1,557 @@
+/** NEW STYLES **/
+/*--------------------------------------------------
+    Template Mixins
+----------------------------------------------------*/
+@media (min-width: 768px) {
+  .row-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.round-icons {
+  border: 1px solid #79c2d3;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  text-align: center;
+  background: #79c2d3;
+  margin-bottom: 20px;
+}
+.icons {
+  font-size: 45px;
+  color: #fff;
+  vertical-align: middle;
+}
+body {
+  font-size: 14px;
+}
+.section-heading {
+  padding-top: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+/*--------------------------------------------------
+    Navbar Section
+----------------------------------------------------*/
+.navbar {
+  /*height: 118px;*/
+  box-shadow: none;
+}
+.navbar .navbar-brand .logo {
+  width: 120px;
+}
+.navbar .navbar-nav {
+  float: right;
+  margin: 30px 0;
+}
+.navbar .navbar-nav li a {
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all .2s .1s ease;
+}
+.navbar .navbar-nav li a:hover,
+.navbar .navbar-nav li a:focus {
+  /*background-color: #fff;*/
+  /*border-bottom: 2px solid #79c2d3;*/
+}
+
+.navbar .navbar-nav .active a,
+.navbar .navbar-nav .active a:hover,
+.navbar .navbar-nav .active a:focus {
+  /*background-color: #fff;*/
+  /*border-bottom: 2px solid #79c2d3;*/
+}
+/*--------------------------------------------------
+    Slider Section
+----------------------------------------------------*/
+.carousel-indicators li {
+  background-color: #79c2d3;
+  border-color: #79c2d3;
+}
+
+.slider .carousel .item {
+  min-height: 780px;
+  height: 100%;
+  width: 100%;
+}
+.slider .carousel .item .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.slider .carousel .item .container .big {
+  max-width: 125%;
+}
+.slider .carousel .carousel-control {
+  width: 6%;
+  text-shadow: none;
+  opacity: 1;
+  background-image: none;
+}
+.slider .carousel .carousel-control i {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  font-size: 25px;
+  color: #333;
+}
+/*--------------------------------------------------
+    Video Section
+----------------------------------------------------*/
+.vid-section {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  background-color: #f7f8fa;
+}
+.vid-section .section-heading h2 span {
+  color: #79c2d3;
+}
+.vid-section .embed-responsive-16by9 {
+  border-bottom: 2px solid #eee;
+}
+/*--------------------------------------------------
+    Services Section
+----------------------------------------------------*/
+#services {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#services .row-flex .col-md-4 {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  border-radius: 4px;
+  margin: 20px 0px;
+  -webkit-transition: 350ms ease all;
+  transition: 350ms ease all;
+  flex-basis: 30%;
+  margin-bottom: 80px;
+}
+#services .row-flex .col-md-4 .icon-circle {
+  border: 1px solid #79c2d3;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  text-align: center;
+  background: #79c2d3;
+  margin-bottom: 20px;
+}
+#services .row-flex .col-md-4 .icon-circle i {
+  font-size: 45px;
+  color: #fff;
+  vertical-align: middle;
+}
+/*--------------------------------------------------
+    Template Section
+----------------------------------------------------*/
+#templates {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+#templates .col-md-4 {
+  padding: 10px;
+  margin: 0;
+  cursor: pointer;
+}
+/*--------------------------------------------------
+    Pricing Section
+----------------------------------------------------*/
+#pricing {
+  background-color: #f7f8fa;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+#pricing .section-heading h2 {
+  color: #fff;
+}
+#pricing .pricing {
+  text-align: center;
+  background: #fff;
+  box-shadow: 15px 15px 15px 0 rgba(0, 0, 0, 0.075);
+}
+#pricing .pricing .pricing-list-header {
+  border-bottom: 1px solid #448c9e;
+  padding: 40px 20px 40px;
+  margin: 0;
+  background-color: #79c2d3;
+  color: #fff;
+}
+#pricing .pricing .pricing-list-header .pricing-list-title {
+  font-size: 36px;
+  margin-bottom: 5px;
+  color: #fff;
+}
+#pricing .pricing .pricing-list-header .pricing-list-subtitle {
+  display: block;
+  font-size: 16px;
+  font-weight: 300;
+}
+#pricing .pricing .pricing-list-content {
+  padding: 40px 20px;
+}
+#pricing .pricing .pricing-list-content .pricing-list-price-sign {
+  position: relative;
+  top: -30px;
+  font-size: 20px;
+}
+#pricing .pricing .pricing-list-content .pricing-list-price {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: .5;
+  letter-spacing: -3px;
+}
+#pricing .pricing .pricing-list-content .pricing-list-subprice {
+  font-size: 30px;
+  font-weight: 400;
+}
+#pricing .pricing .pricing-list-content .pricing-list-price-info {
+  position: relative;
+  letter-spacing: 1px;
+}
+#pricing .pricing .pricing-list-content .pricing-list-price-info:before {
+  font-size: 22px;
+  font-weight: 300;
+  content: "/";
+  margin-right: 3px;
+}
+#pricing .pricing .pricing-list-content .benefit-list li:first-child {
+  padding-top: 40px;
+}
+#pricing .pricing .pricing-list-content .benefit-list li {
+  padding: 10px 0;
+}
+/*--------------------------------------------------
+    Footer Section
+----------------------------------------------------*/
+footer {
+  border-bottom: 2px solid #f5f5f5;
+  background-color: #444;
+  color: #fff;
+}
+footer .footer-detail {
+  padding: 50px 0;
+}
+footer .footer-detail h4 {
+  color: #fff;
+}
+footer .footer-detail .footer-links li {
+  padding: 5px 0;
+}
+footer .footer-detail .footer-links li a {
+  color: #f5f5f5;
+}
+footer .footer-bottom {
+  border-top: 3px solid #448c9e;
+  background-color: #f5f5f5;
+  color: #222;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*--------------------------------------------------
+    Services Page Styling
+----------------------------------------------------*/
+#our-services {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  background-color: #f7f8fa;
+}
+@media (min-width: 768px) {
+  #our-services .row1 {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#our-services .row1 {
+  margin: 20px;
+}
+#our-services .row1 .service {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 3px 2px 3px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  border-radius: 4px;
+  margin: 20px 0px;
+  -webkit-transition: 350ms ease all;
+  transition: 350ms ease all;
+  flex-basis: 32%;
+  text-align: center;
+}
+#our-services .row1 .service .box .icon-circle {
+  border: 1px solid #79c2d3;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  margin: 0 auto;
+  text-align: center;
+  background: #79c2d3;
+  margin-bottom: 20px;
+}
+#our-services .row1 .service .box i {
+  font-size: 45px;
+  color: #fff;
+  vertical-align: middle;
+}
+#sign-up {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.55)), url(../img/cover.jpg) center center fixed;
+  color: #fff;
+}
+#sign-up .row {
+  display: flex;
+}
+#sign-up .row h2 {
+  color: #fff;
+}
+#sign-up .row .col-md-4 {
+  margin: auto;
+  padding-top: 40px;
+}
+/*--------------------------------------------------
+    About Page Styling
+----------------------------------------------------*/
+#about {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+#about .about-content .col-md-6 {
+  padding-bottom: 80px;
+}
+#about .about-content .col-md-5 {
+  margin: auto;
+}
+#about .about-content .col-md-5 ul {
+  padding-left: 30px;
+}
+#about .about-content .col-md-5 ul li:before {
+  content: "\f362";
+  position: absolute;
+  left: 15px;
+  padding-top: 2px;
+  font-size: 12px;
+  color: #222;
+  font-family: "Ionicons";
+}
+/*--------------------------------------------------
+    Contact Page Styling
+----------------------------------------------------*/
+#contact {
+  padding-top: 30px;
+  padding-bottom: 60px;
+}
+#contact .contact-details .contact {
+  box-sizing: border-box;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  padding: 25px;
+  border-radius: 4px;
+  margin: 20px 15px;
+  -webkit-transition: 350ms ease all;
+  transition: 350ms ease all;
+  flex-basis: 30%;
+}
+#contact .country-contact {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+#contact .country-contact .col-md-3 {
+  flex-basis: 23%;
+}
+#contact .country-contact .col-md-3 img {
+  width: 80%;
+}
+#contact .form-area .the-form {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  padding: 45px 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#contact .form-area .the-form .input,
+#contact .form-area .the-form #contact_message {
+  width: 100%;
+}
+
+#contact .contact-text .social-menu-contact ul li {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin: 4px 15px;
+    position: relative;
+}
+
+.fb {
+    background: #3b5998;
+}
+
+.pinterest {
+    background: #d34836;
+}
+
+.twitter {
+  background: #0077B5;
+}
+
+.linkedin {
+    background: #0077B5;
+}
+
+#contact .contact-text .social-menu-contact ul li i {
+  font-size: 20px;
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  #contact .contact-details {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 768px) {
+  #contact .country-contact {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+/*--------------------------------------------------
+    Button Styles
+----------------------------------------------------*/
+.btn-primary {
+  color: #ffffff;
+  background-color: #448c9e;
+  border-color: transparent;
+  transition: all 0.2s 0.1s ease-in;
+  background-image: none !important;
+}
+.btn-primary:hover {
+  color: #ffffff;
+  background-color: #295d72;
+  border-color: transparent;
+  background-image: none !important;
+}
+.btn-success {
+  background-image: none !important;
+  color: #ffffff;
+  background-color: #79c2d3;
+  border-color: transparent;
+  transition: all 0.2s 0.1s ease-in;
+}
+.btn-success:hover {
+  background-image: none !important;
+  color: #ffffff;
+  background-color: #448c9e;
+  border-color: transparent;
+}
+/*--------------------------------------------------
+    Campaign Page Styles
+----------------------------------------------------*/
+#campaign {
+  padding: 5% 0;
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#campaign .form-box {
+  padding: 40px;
+  background-color: #fff;
+}
+#campaign .marketing {
+  margin: auto;
+}
+#campaign .marketing h2 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  font-weight: 300;
+}
+#campaign .marketing .rounded {
+  border: 1px solid #79c2d3;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  margin: 0 auto;
+  text-align: center;
+  background: #79c2d3;
+  margin-bottom: 20px;
+  color: #fff;
+}
+#campaign .marketing .rounded .price {
+  margin: 32px 0;
+}
+#campaign .marketing .rounded .price .your-price {
+  margin: 0;
+}
+#campaign .marketing .rounded .price .the-price {
+  margin: 0;
+  font-size: 55px;
+  color: #fff;
+}
+.footer-service {
+  margin: 40px 5px;
+}
+.footer-service h4 {
+  color: #fff;
+}
+.footer-service hr {
+  border-top: 2px solid #79c2d3;
+}
+/*--------------------------------------------------
+    Login Modal
+----------------------------------------------------*/
+.loginmodal-container {
+  padding: 30px;
+  max-width: 420px;
+  width: 100% !important;
+  background-color: #f7f8fa;
+  margin: 0 auto;
+  border-radius: 2px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+.loginmodal-container a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 400;
+  text-align: center;
+  display: inline-block;
+  opacity: 0.6;
+  transition: opacity ease 0.5s;
+}
+.loginmodal-container .loginmodal-submit {
+  width: 100%;
+  display: block;
+  margin-bottom: 25px;
+  position: relative;
+  border: 0px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+  background-color: #448c9e;
+  padding: 17px 0px;
+  font-size: 14px;
+}
+.loginmodal-container .loginmodal-submit:hover {
+  border: 0px;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+  background-color: #295d72;
+}
+.loginmodal-container .form-group {
+  margin-bottom: 25px;
+}
+.loginmodal-container .login-help {
+  font-size: 12px;
+}
+
+nav.navbar {
+  background-color: transparent !important;
+  background-image: none;
+}

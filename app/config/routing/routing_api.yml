@@ -1,0 +1,14 @@
+app_shop_customer_api:
+    prefix: /v1
+    name_prefix:  api_1.
+    type:     rest
+    resource: Shop\UserBundle\Controller\Api\UserController
+
+
+app_site_api:
+    prefix: /v1
+    name_prefix:  api_1.
+    type:     rest
+    resource: App\SiteBundle\Controller\Api\SiteController
+    options:
+        expose: true

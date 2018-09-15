@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2017-01-14T22:13:57Z" source-language="en" target-language="da" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="e65827ba98f98a975c4fb13b8875fd36053f9005" resname="%product_name%.consists.of.purified.water,.citric.acid,.benzalkonuim,.chloride,.cellulose.gum,.sodium.chloride,.disodium.phosphate.">
+        <source>%product_name%.consists.of.purified.water,.citric.acid,.benzalkonuim,.chloride,.cellulose.gum,.sodium.chloride,.disodium.phosphate.</source>
+        <target xml:space="preserve">%product_name% består af renset vand, citric acid, benzalkonuim, chloride, cellulose gum, sodium chloride, disodium phosphat.
+</target>
+      </trans-unit>
+      <trans-unit id="6279c1b549c67a256c6b90bf747ea8e4c5bbd0df" resname="%product_name%.is.a.100%.sterile.solution,.and.you.can.be.sure.that.%product_name%.does.not.cause.any.discomfort..you.can.therefore.use.the.product.even.if.your.eyes.are.sensitive.">
+        <source>%product_name%.is.a.100%.sterile.solution,.and.you.can.be.sure.that.%product_name%.does.not.cause.any.discomfort..you.can.therefore.use.the.product.even.if.your.eyes.are.sensitive.</source>
+        <target>%product_name% er en 100% steril opløsning, og du kan derfor være sikker på at %product_name% ikke forårsager nogen ubehag. Du kan derfor rolige bruge produktet selvom dine øjne er følsomme.</target>
+      </trans-unit>
+      <trans-unit id="32cd01de49fb10891c62207e3324c0b3d45c5d15" resname="%product_name%.is.a.100%.sterile.solution,.should.you.get.the.product.in.the.eyes,.it.should.not.matter.">
+        <source>%product_name%.is.a.100%.sterile.solution,.should.you.get.the.product.in.the.eyes,.it.should.not.matter.</source>
+        <target>%product_name% er af 100% steril opløsning, og skulle du få produktet i øjenene, bør det ikke svige. Har du, dog fået meget i øjenene anbefaler vi, at du skyller dit øje med vand, selvom der ingenting vil ske.</target>
+      </trans-unit>
+      <trans-unit id="a2e816883edd416d45cada8b906ebaa86f6dc87f" resname="after.opening.the.tube,.the.product.has.a.shelf.life.of.approximately.1-2.months.">
+        <source>after.opening.the.tube,.the.product.has.a.shelf.life.of.approximately.1-2.months.</source>
+        <target>Efter åbning af tuben, har produktet en holdbarhed på ca. 1-2 måneder.</target>
+      </trans-unit>
+      <trans-unit id="268cba046f425ba96bdec75dde65e3fd5e735a65" resname="anyone.can.use.%product_name%.the.product.is.for.all.audiences.who.want.longer.and.fuller.lashes.,.however,.it.is.not.recommended.that.breastfeeding.women,.expectant.mothers,.and.those.undergoing.chemotherapy./.radiation.therapy.use.%product_name%.">
+        <source>anyone.can.use.%product_name%.the.product.is.for.all.audiences.who.want.longer.and.fuller.lashes.,.however,.it.is.not.recommended.that.breastfeeding.women,.expectant.mothers,.and.those.undergoing.chemotherapy./.radiation.therapy.use.%product_name%.</source>
+        <target>Alle kan bruge %product_name%. Produktet er til alle målgrupper, der ønsker længere og fyldigere vipper. Det frarådes dog, at ammende kvinder, vordende mødre, og dem, der gennemgår kemo-/strålebehandling bruger %product_name%.</target>
+      </trans-unit>
+      <trans-unit id="59131476e754ce05f05b95b503fdef6b18cc8713" resname="how.long.after.you.opened.the.tube.container.does.%product_name%.maintain.its.stimulating.effect?">
+        <source>how.long.after.you.opened.the.tube.container.does.%product_name%.maintain.its.stimulating.effect?</source>
+        <target>Hvor længe efter man åbner tuben, beholder %product_name% sin stimulerende effekt?</target>
+      </trans-unit>
+      <trans-unit id="6bee113aaa61b562146ff354ec35a06a0ec7f73e" resname="how.should.%product_name%.be.applied?">
+        <source>how.should.%product_name%.be.applied?</source>
+        <target>Hvordan bør %product_name% påføres?</target>
+      </trans-unit>
+      <trans-unit id="3ef78a6379ff7bdf0de6abdd138148187ea0b1bb" resname="i.forgot.my.daily.treatment.what.should.i.do?">
+        <source>i.forgot.my.daily.treatment.what.should.i.do?</source>
+        <target>Jeg glemte min daglige behandling. Hvad skal jeg gøre?</target>
+      </trans-unit>
+      <trans-unit id="5824d31383acb0283975a594cd19700f440adece" resname="if.you.have.missed.one.or.more.treatments,.the.effect.starts.to.fade,.to.get.the.best.results,.use.the.product.regularly.">
+        <source>if.you.have.missed.one.or.more.treatments,.the.effect.starts.to.fade,.to.get.the.best.results,.use.the.product.regularly.</source>
+        <target>Har du glemt en eller flere behandlinger, gør dette blot at processen forringes. For at få de bedst mulige resultater, skal du bruge produktet regelmæssigt for at få de bedst ønskede resultater.</target>
+      </trans-unit>
+      <trans-unit id="bb15c0dc730cd0afc5e71588c13e544482c1f44b" resname="its.easy.to.apply.%product_name%,.the.application.brush,.is.a.plain.eyeliner.brush.apply.the.transparent.liquid.on.eyelashes.on.clean.skin.and.let.it.dry.for.2.min.you.can.then.apply.your.regular.makeup.">
+        <source>its.easy.to.apply.%product_name%,.the.application.brush,.is.a.plain.eyeliner.brush.apply.the.transparent.liquid.on.eyelashes.on.clean.skin.and.let.it.dry.for.2.min.you.can.then.apply.your.regular.makeup.</source>
+        <target>Det er nemt at påføre %product_name%. Påføringsbørsten er som en almindelig eyeliner børste. Påfør det gennemsigtige væske på øjenvippernes rod, på renset hud, og lad det tørre. Serummen skal bruge små 2 min. til at tørre. Herefter kan du påføre din daglige makeup.</target>
+      </trans-unit>
+      <trans-unit id="9dd31346aa4c50af1fc1ec07613f4161ea238c21" resname="my.eyes.are.very.sensitive..will.i.be.forced.to.give.up.the.%product_name%.treatment?">
+        <source>my.eyes.are.very.sensitive..will.i.be.forced.to.give.up.the.%product_name%.treatment?</source>
+        <target>Mine øjne er meget følsomme. Vil jeg være nødt til at opgive %product_name%-behandlingen?</target>
+      </trans-unit>
+      <trans-unit id="73bad92a936bfcdba9cc92adc9bd17c0ee69ab06" resname="what.is.inside.%product_name%">
+        <source>what.is.inside.%product_name%</source>
+        <target>Hvad består %product_name% af?</target>
+      </trans-unit>
+      <trans-unit id="3c135335e45445e1f403730b924a8db873a667e7" resname="what.to.do.if.you.get.the.serum.in.the.eyes?">
+        <source>what.to.do.if.you.get.the.serum.in.the.eyes?</source>
+        <target>Hvad skal man gøre hvis man får serummet i øjnene?</target>
+      </trans-unit>
+      <trans-unit id="78c954391afe5ae8d7fb6b09750fbf2dd14d1767" resname="who.can.use.%product_name%">
+        <source>who.can.use.%product_name%</source>
+        <target>Hvem kan bruge %product_name%?</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

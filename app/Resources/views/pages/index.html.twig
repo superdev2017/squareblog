@@ -1,0 +1,553 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block description %}
+    {{ app_name }} build the website you have always dreamed about!
+{% endblock %}
+
+{% block body %}
+
+{% include '/_shared/_header.html.twig' %}
+
+
+<!-- Page Slider -->
+<section class="slider probootstrap-hero" style="background-image: url({{ asset('images/image_1.jpg') }}); background-size: cover; background-position: 0px 0px;" data-section="home"　data-stellar-background-ratio="0.5">
+    <div id="my-slider">
+        <div id="carousel-main" class="carousel slide carousel-fade">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-main" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-main" data-slide-to="1"></li>
+                <li data-target="#carousel-main" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <!-- Item 1 -->
+                <div class="item active slide1">
+                    <div class="row"><div class="container">
+                            <div class="col-md-6 text-left intro-text">
+                                <h1 class="probootstrap-heading probootstrap-animate" data-animation="animated bounceInDown">Create Amazing Websites</h1>
+                                <br>
+                                <p class="probootstrap-animate" data-animation="animated bounceInUp">
+                                    Our Advanced, easy to use website editor allows you<br> to create the website of your needs
+                                </p>
+                                <br>
+                                <div>
+                                    <ul class="list-unstyled list-inline">
+                                        <li>
+                                            <a href="#pricing" class="btn btn-success btn-lg smooth-scroll">Get Started For €5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#video" class="btn btn-success btn-lg smooth-scroll">View Demo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <img class="img-responsive" data-animation="animated zoomInLeft" src="{{ asset('images/theme/imac.png') }}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Item 2 -->
+                <div class="item slide2">
+                    <div class="row"><div class="container">
+                            <div class="col-md-6 text-left intro-text">
+                                <h1 class="probootstrap-heading probootstrap-animate" data-animation="animated bounceInDown">Engaging & Intuitive Editor</h1>
+                                <br>
+                                <p class="probootstrap-animate" data-animation="animated bounceInUp">
+                                    Our editor has been optimized for regular people. <br> Every edit will feel natural.
+                                </p>
+                                <br>
+                                <div>
+                                    <ul class="list-unstyled list-inline">
+                                        <li>
+                                            <a href="#pricing" class="btn btn-success btn-lg smooth-scroll">Get Started For €5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#video" class="btn btn-success btn-lg smooth-scroll">View Demo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <img class="big" data-animation="animated zoomInLeft" src="{{ asset('images/theme/ipad.png') }}">
+                            </div>
+                        </div></div>
+                </div>
+                <!-- Item 3 -->
+                <div class="item slide3">
+                    <div class="row"><div class="container">
+                            <div class="col-md-6 text-left intro-text">
+                                <h1 class="probootstrap-heading probootstrap-animate" data-animation="animated bounceInDown">Start Today From Just €5</h1>
+                                <br>
+                                <p class="probootstrap-animate" data-animation="animated bounceInUp">
+                                    We offer more than 500 themes. No matter your idea, <br> we have a theme that will suit you.
+                                </p>
+                                <br>
+                                <div>
+                                    <ul class="list-unstyled list-inline">
+                                        <li>
+                                            <a href="#pricing" class="btn btn-success btn-lg smooth-scroll">Get Started For €5</a>
+                                        </li>
+                                        <li>
+                                            <a href="#video" class="btn btn-success btn-lg smooth-scroll">View Demo</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-right">
+                                <img class="big" data-animation="animated zoomInLeft" src="{{ asset('images/theme/Mac.png') }}">
+                            </div>
+                        </div></div>
+                </div>
+            </div>
+            <!-- End Wrapper for slides
+            <a class="left carousel-control" href="#carousel-main" role="button" data-slide="prev">
+                <i class="ion-android-arrow-back"></i><span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-main" role="button" data-slide="next">
+                <i class="ion-android-arrow-forward"></i><span class="sr-only">Next</span>
+            </a>
+            -->
+        </div>
+    </div>
+</div>
+</section>
+<!--video-->
+<section id="demo">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+                <div class="text-center section-heading">
+                    <h2>Demo</h2>
+                </div>
+                <div class="container" id="presentation" style="margin-bottom: 50px;">
+                    <video id="video" width="100%" controls>
+                        <source src="{{ asset("video/easywebbuilder.mp4") }}" type="video/mp4">
+                        <source src="{{ asset("video/easywebbuilder.ogv") }}" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<!--services wrapper-->
+<section id="our-services">
+    <div class="container">
+        <div class="row clearfix">
+            <div class="text-center section-heading">
+                <h2>WHAT WE DO</h2>
+                <p>{{ app_name }} is a top provider of website building software.<br> Our software comes in 2 packages, we provide a basic editor with a small learning curve,<br> and a pro editor for those with unique requests.</p>
+            </div>
+
+            <div class="row1 probootstrap-animate" data-animate-effect="fadeIn">
+                <div class="col-md-4 service probootstrap-animate" data-animate-effect="fadeIn">
+                    <div class="box">
+                        <div class="icon-circle"><i class="ion-iphone" aria-hidden="true"></i></div>
+                        <h4>ULTIMATE EDITOR</h4>
+                        <div class="text">Our editor automatically makes your website responsive on all devices!</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 service probootstrap-animate" data-animate-effect="fadeIn">
+                    <div class="box">
+                        <div class="icon-circle"><i class="ion-wrench" aria-hidden="true"></i></div>
+                        <h4>USER-FRIENDLY INTERFACE</h4>
+                        <div class="text">Our Interface is build with the end user in mind. Anyone can jump right in and have a website running in 10 minutes!</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 service probootstrap-animate" data-animate-effect="fadeIn">
+                    <div class="box">
+                        <div class="icon-circle"><i class="fa ion-android-document" aria-hidden="true"></i></div>
+                        <h4>DEVELOPMENT PLEDGE</h4>
+                        <div class="text">We promise to add new themes on a regular basis, your subscription will always be relevant.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row1 probootstrap-animate" data-animate-effect="fadeIn">
+                <div class="col-md-4 service probootstrap-animate" data-animate-effect="fadeIn">
+                    <div class="box">
+                        <div class="icon-circle"><i class="ion-lock-combination" aria-hidden="true"></i></div>
+                        <h4>AUTOMATIC PROTECTION</h4>
+                        <div class="text">If you chose to keep our domain, our SSL certificate automatically covers your website.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 service probootstrap-animate" data-animate-effect="fadeIn">
+                    <div class="box">
+                        <div class="icon-circle"><i class="ion-speakerphone" aria-hidden="true"></i></div>
+                        <h4>TONS OF PLUGINS</h4>
+                        <div class="text">You will get access to tons of plugins that you can add/remove or customize! New plugins are added on demand.</div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 service probootstrap-animate" data-animate-effect="fadeIn">
+                    <div class="box">
+                        <div class="icon-circle"><i class="ion-videocamera" aria-hidden="true"></i></div>
+                        <h4>MULTIPLE DATA CENTERS</h4>
+                        <div class="text">Our data is stored across multiple data centers, your website will always be served to the end client using the nearest data center!</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end service -->
+<!-- about us -->
+<secrion id="about" class="terms-page page probootstrap-section probootstrap-bg-light" data-stellar-offset-parent="true"
+         data-stellar-horizontal-offset="40"
+         data-stellar-vertical-offset="150">
+    <div class="container">
+        <div class="row">
+            <div class="text-center section-heading">
+                <h2>About Us</h2>
+                <p>We are proffessionals at what we do!</p>
+            </div>
+            <div class="row-flex about-content">
+                <div id="about-img" class="col-md-6 probootstrap-animate" data-animate-effect="fadeIn"></div>
+                <div class="col-md-5 col-md-offset-1">
+                    <p>{{ app_name }} is a leading cloud-based website builder platform. Our goal is to let everyone no matter their skill level, create beautiful websites.
+                        <br>
+                        <br>
+                        <ul class="list-unstyled">
+                            <li>
+                    <p>All of our templates are tailored to meet specific customer demand and customer expectations.</p>
+                    </li>
+                    <li>
+                        <p>We at {{ app_name }} have a high quality standard, and all of our software products are of high quality.</p>
+                    </li>
+                    <li>
+                        <p>All of our packages offer technical support, server hosting, a sub-domain, and technical assistance.</p>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</secrion>
+<!-- end about us -->
+
+<!--templates-->
+<section id="templates">
+    <div class="container">
+        <div class="row">
+            <div class="row">
+
+                <div class="text-center section-heading">
+                    <h2>Templates</h2>
+                    <p>We can offer more then 500 themes, from all kinds of categories.</p>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-3 probootstrap-animate" data-animate-effect="fadeInRight">
+                    <div class="item">
+                        <a class="thumbnail gallery" href="{{ asset('images/design/22.jpg') }}"><img src="{{ asset('images/design/22.jpg') }}" alt="template"></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-3 probootstrap-animate" data-animate-effect="fadeInRight">
+                    <div class="item">
+                        <a class="thumbnail gallery" href="{{ asset('images/design/14.jpg') }}"><img src="{{ asset('images/design/14.jpg') }}" alt="template"></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-3 probootstrap-animate" data-animate-effect="fadeInRight">
+                    <div class="item">
+                        <a class="thumbnail gallery" href="{{ asset('images/design/3.jpg') }}"><img src="{{ asset('images/design/3.jpg') }}" alt="template"></a>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-sm-3 col-md-3 probootstrap-animate" data-animate-effect="fadeInRight">
+                    <div class="item">
+                        <a class="thumbnail gallery" href="{{ asset('images/design/13.jpg') }}"><img src="{{ asset('images/design/13.jpg') }}" alt="template"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contact us -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="text-center section-heading">
+                    <h2>Get in touch</h2>
+                    <p>We’re here to help you with anything you need
+                        <br>You will find multiple ways to get in touch with us below.</p>
+                </div>
+            </div>
+            <div class="contact-details">
+                <div class="contact col-md-4 text-center">
+                    <h4>Billing</h4>
+                    <p>Have any qestions about your billing? Please contact <a href="mailto:{{ support_email }}">{{ support_email }}</a></p>
+                </div>
+                <div class="contact col-md-4 text-center">
+                    <h4>Technical</h4>
+                    <p>If you have any technical questions, please contact <a href="mailto:{{ support_email }}">{{ support_email }}</a>.<br>This includes technical errors or any other questions or issues you might have.</p>
+                </div>
+                <div class="contact col-md-4 text-center">
+                    <h4>Feedback</h4>
+                    <p>If you have any feedback, request for new features or possible plugin integration, please contact</p><a href="mailto:{{ support_email }}">{{ support_email }}</a>
+                </div>
+                <div class="contact col-md-4 text-center">
+                    <h4>Join the team</h4>
+                    <p>Want to work for us?<br> We are always looking for talented people. Send your application to:<br> <a href="mailto:{{ support_email }}">{{ support_email }}</a>.</p>
+                </div>
+
+            </div>
+
+            <div class="contact-text text-center">
+                <p><h3>Find us on social Media:</h3></p>
+                <div class="social-menu-contact">
+                    <ul class="list-unstyled list-inline">
+                        <li class="fb">
+                            <a href="{{ facebook_profile }}" target="_blank"><i class="ion-social-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="twitter">
+                            <a href="{{ twitter_profile }}" target="_blank"><i class="ion-social-twitter" aria-hidden="true"></i> </a>
+                        </li>
+                        <li class="linkedin">
+                            <a href="{{ linkedin_profile }}" target="_blank"><i class="ion-social-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="pinterest">
+                            <a href="{{ pinterest_profile }}" target="_blank"><i class="ion-social-pinterest" aria-hidden="true"></i> </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="country-contact">
+                <div class="col-md-3">
+                    <img class="aligncenter" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/no.svg" alt="" width="80">
+                    <h4>Norway</h4>
+                    <h5><strong>Contact Our Support</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Email: </strong>{{ support_email }}</li>
+                        <li><strong>Phone: </strong>{{ support_phone }}</li>
+                        <li><strong>Opening hours: </strong><br>
+                            Monday to Friday {{ phone_time }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img class="aligncenter" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/se.svg" alt="centralized02" width="80">
+                    <h4>Sweden</h4>
+                    <h5><strong>Contact Our Support</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Email: </strong>{{ support_email }}</li>
+                        <li><strong>Phone: </strong>{{ support_phone }}</li>
+                        <li>Opening hours: </strong><br>
+                            Monday to Friday {{ phone_time }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img class="aligncenter" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/fr.svg" alt="" width="80">
+                    <h4>France</h4>
+                    <h5><strong>Contact Our Support</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Email: </strong>{{ support_email }}</li>
+                        <li><strong>Phone: </strong>{{ support_phone }}</li>
+                        <li>Opening hours: </strong><br>
+                            Monday to Friday {{ phone_time }}</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img class="aligncenter" src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/gb.svg" alt="" width="80">
+                    <h4>UK</h4>
+                    <h5><strong>Contact Our Support</strong></h5>
+                    <ul class="list-unstyled">
+                        <li><strong>Email: </strong>{{ support_email }}</li>
+                        <li><strong>Phone: </strong>{{ support_phone }}</li>
+                        <li>Opening hours: </strong><br>
+                            Monday to Friday {{ phone_time }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="probootstrap-section probootstrap-bg-light" data-section="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <form action="" class="probootstrap-form">
+                        <h2 class="text-black mt0">Get In Touch</h2>
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control"cols="30" rows="10" placeholder="Write a Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" class="btn btn-primary" value="Send Message">
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 col-md-push-1">
+                    <ul class="probootstrap-contact-details">
+                        <li>
+                            <span class="text-uppercase">Email</span>
+                            probootstrap@gmail.com
+                        </li>
+                        <li>
+                            <span class="text-uppercase">Phone</span>
+                            +30 976 1382 9921
+                        </li>
+                        <li>
+                            <span class="text-uppercase">Fax</span>
+                            +30 976 1382 9922
+                        </li>
+                        <li>
+                            <span class="text-uppercase">Address</span>
+                            San Francisco, CA <br>
+                            4th Floor8 Lower  <br>
+                            San Francisco street, M1 50F
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- end contact us -->
+<!-- Pricing Section -->
+    <section id="pricing">
+        <div class="container">
+            <div class="row">
+                  <div class="text-center section-heading">
+                      <h2>Get Started Today</h2>
+                  </div>
+                  <div class="col-md-8 col-md-offset-2">
+                      <div class="col-md-6">
+                          <!-- Pricing List 1 -->
+                          <div class="pricing">
+                              <div class="pricing-list-header">
+                                  <h4 class="pricing-list-title">Basic Package</h4>
+                                  <span class="pricing-list-subtitle">Build unlimited basic websites</span>
+                              </div>
+                              <div class="pricing-list-content">
+                                  <div>
+                                      <span class="pricing-list-price-sign"><i class="ion-social-euro"></i></span>
+                                      <span class="pricing-list-price">39.</span>
+                                      <span class="pricing-list-subprice">00</span>
+                                      <span class="pricing-list-price-info">Month</span>
+                                  </div>
+                                  <div>
+                                      <ul class="list-unstyled benefit-list">
+                                          <li>
+                                              <p><strong>Unlimited Basic</strong> Build unlimited Basic websites</p>
+                                          </li>
+                                          <li>
+                                              <p><strong>Basic Editor</strong> Access to the Basic Editor</p>
+                                          </li>
+                                          <li>
+                                              <p><strong>SSL</strong> coverage</p>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="center-block">
+                                      <a href="{{ path('buy', {'id': 1}) }}" class="btn-success btn-lg">Purchase Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Pricing List 1 -->
+                      </div>
+                      <div class="col-md-6">
+                          <!-- Pricing List 2 -->
+                          <div class="pricing">
+                              <div class="pricing-list-header">
+                                  <h4 class="pricing-list-title">Pro Package</h4>
+                                  <span class="pricing-list-subtitle">Build unlimited Pro websites</span>
+                              </div>
+                              <div class="pricing-list-content">
+                                  <div>
+                                      <span class="pricing-list-price-sign"><i class="ion-social-euro"></i></span>
+                                      <span class="pricing-list-price">5.</span>
+                                      <span class="pricing-list-subprice">00</span>
+                                      <span class="pricing-list-price-info">3 Day Trial</span>
+                                      <div>Then 69.00 € / Month</div>
+                                  </div>
+                                  <div>
+                                      <ul class="list-unstyled benefit-list">
+                                          <li>
+                                              <p><strong>Unlimited Pro</strong> Build unlimited Pro websites</p>
+                                          </li>
+                                          <li>
+                                              <p><strong>Pro Editor</strong> Access to the Pro Editor</p>
+                                          </li>
+                                          <li>
+                                              <p><strong>SSL</strong> Coverage</p>
+                                          </li>
+                                          <li>
+                                              <p><strong>Domain</strong> Attach your own domain</p>
+                                          </li>
+                                          <li>
+                                              <p><strong>Support</strong> Priority Support</p>
+                                          </li>
+                                      </ul>
+                                  </div>
+                                  <div class="center-block">
+                                      <a href="{{ path('buy', {'id': 2}) }}" class="btn-success btn-lg">Purchase Now</a>
+                                  </div>
+                              </div>
+                          </div>
+                          <!-- End Pricing List 2 -->
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+
+{% include '/_shared/_footer.html.twig' %}
+
+<!-- jQuery -->
+<script>
+  $(document).ready(function(){
+    $('.gallery').featherlightGallery({
+      gallery: {
+        fadeIn: 300,
+        fadeOut: 300
+      },
+      openSpeed:    300,
+      closeSpeed:   300
+    });
+    $('.gallery2').featherlightGallery({
+      gallery: {
+        next: 'next »',
+        previous: '« previous'
+      },
+      variant: 'featherlight-gallery2'
+    });
+
+
+      $(document).on("click", ".demo", function () {
+        $video = $('#presentation video')[0];
+        $video.play();
+      });
+
+    function autoplayvideo() {
+        setTimeout(function () {
+            $video = $('#presentation video')[0];
+            $video.play();
+
+        }, 2000); // How long do you want the delay to be (in milliseconds)?
+    }
+
+  });
+  $('.carousel').carousel({
+    interval: 5000
+  })
+
+</script>
+{% endblock %}

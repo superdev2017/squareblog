@@ -1,0 +1,65 @@
+{% trans_default_domain "pages" %}
+
+{% if (is_granted('ROLE_CUSTOMER') and app.session.flashBag.has('shop_notification') == 1) %}
+    {% for flashMessage in app.session.flashbag.get('shop_notification') %}
+        {{ flashMessage|raw }}
+    {% endfor %}
+{% endif %}
+
+<div class="notification-center" id="notification-center">
+    <!-- Notification area -->
+    {% if error is defined and error is not empty %}
+        <div class="alert alert-danger alert-dismissible" role="alert">
+            <div class="container">
+                <div class="col-sm-12">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <strong>{{ "Error"|trans }}:</strong> {{ error.messageKey|trans(error.messageData, 'security') }}
+                </div>
+            </div>
+        </div>
+    {% endif %}
+
+    {% block notifications %}
+        <!-- Flash Messages -->
+        {% for flashMessage in app.session.flashbag.get('info') %}
+            <div class="alert alert-info alert-dismissible" role="alert">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>{{ "Info"|trans }}:</strong> {{ flashMessage }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {% for flashMessage in app.session.flashbag.get('warning') %}
+            <div class="alert alert-warning alert-dismissible" role="alert">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>{{ "Warning"|trans }}:</strong> {{ flashMessage }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {% for flashMessage in app.session.flashbag.get('success') %}
+            <div class="alert alert-success alert-dismissible" role="alert">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>{{ "Success"|trans }}:</strong> {{ flashMessage }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        {% for flashMessage in app.session.flashbag.get('error') %}
+            <div class="alert alert-danger alert-dismissible" role="alert">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>{{ "Error"|trans }}:</strong> {{ flashMessage }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    {% endblock %}
+</div>

@@ -1,0 +1,26 @@
+app_site:
+    path:     /{slug}
+    host:     "{username}.localhost"
+    defaults:
+        _controller: "AppSiteBundle:Front/Site:index" # keeping * as placeholder will lead to *.site.eu/home which may not be what you want
+        username: demo
+        slug: ''
+    requirements:
+        username: ".+"
+    options:
+      i18n: false
+
+_wdt:
+    resource: "@WebProfilerBundle/Resources/config/routing/wdt.xml"
+    prefix:   /_wdt
+
+_profiler:
+    resource: "@WebProfilerBundle/Resources/config/routing/profiler.xml"
+    prefix:   /_profiler
+
+_errors:
+    resource: "@TwigBundle/Resources/config/routing/errors.xml"
+    prefix:   /_error
+
+_main:
+    resource: routing.yml

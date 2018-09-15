@@ -1,0 +1,19 @@
+services:
+    user_manager:
+        class: Shop\UserBundle\Manager\UserManager
+        arguments: ["%pc_domain%", "%pc_secret%"]
+        calls:
+            - [ setContainer,[ "@service_container" ] ]
+
+    # Security
+    user_authenticator:
+        class: Shop\UserBundle\Security\Authenticator\UserAuthenticator
+        arguments: ["@security.password_encoder"]
+        calls:
+            - [ setContainer,[ "@service_container" ] ]
+
+    user_mailer:
+        class: Shop\UserBundle\Mailer\MailgunMailer
+        arguments: ['@mailer', '@router', '@templating', { confirmation.template: '%fos_user.registration.confirmation.template%', resetting.template: '%fos_user.resetting.email.template%', from_email: { confirmation: '%fos_user.registration.confirmation.from_email%', resetting: '%fos_user.resetting.email.from_email%' } }]
+        calls:
+            - [ setContainer,[ "@service_container" ] ]

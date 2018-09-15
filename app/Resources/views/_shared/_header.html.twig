@@ -1,0 +1,97 @@
+{% trans_default_domain "pages" %}
+
+{% set nav_header_class = '' %}
+{% if currentPath == '/' %}
+    {% set nav_header_class = 'probootstrap-navbar' %}
+{% endif %}
+<nav class="navbar navbar-default {{ nav_header_class }}">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ path('homepage') }}">
+                <img class="logo" src="{{ asset('images/theme/squareblog.png') }}">
+            </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+                {% if not is_granted('ROLE_CUSTOMER') %}
+                    <ul class="nav navbar-nav">
+                        <li><a href="{{ path('homepage') }}#video" class="smooth-scroll" onclick="autoplayvideo()">Front</a></li>
+                        <li><a href="{{ path('homepage') }}#our-services">What we do</a></li>
+                        <li><a href="{{ path('homepage') }}#about">Who are we?</a></li>
+                        <li><a href="{{ path('homepage') }}#contact">Contact</a></li>
+                        <li><a href="{{ path('homepage') }}#pricing" class="smooth-scroll">Register</a></li>
+                        <li><a href="#" class="external" data-toggle="modal" data-target="#login-modal">Login</a></li>
+                     </ul>
+                {% else %}
+                    <ul class="nav navbar-nav">
+                        <li class="top-level {% if app.request.attributes.get('_route') == 'homepage' %}{% endif %}">
+                            <a href="{{ path('homepage') }}" title="{{ 'front.page'|trans }}">Home</a>
+                        </li>
+                        <li class="top-level">
+                            <a href="{{ path('light_builder_my_sites') }}" title="Light Builder">Basic Builder</a>
+                        </li>
+                        <li class="top-level">
+                            <a {% if is_granted('ROLE_PRO') %}href="{{ path('advanced_builder') }}"{% else %} onclick="advancedBuilderNotAuthorized();"{% endif %}target="_blank" data-step="5" data-intro="If you feel limited by the functionality of our light editor, you can always switch to our advanced which has many more templates and features.">Pro Builder</a>
+                        </li>
+                        <li class="top-level {% if app.request.attributes.get('_route') == 'contact' %}active{% endif %}">
+                            <a href="{{ path('contact') }}" title="Contact">Contact</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">My Account <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="{{ path('shop_user_orders') }}">Orders</a></li>
+                                <li><a href="{{ path('shop_user_account') }}">Account</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="{{ path('fos_user_security_logout') }}">Logout</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                {% endif %}
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="filler-area"></div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+        <div class="loginmodal-container">
+            <h4>Sign In To Your Account</h4>
+            <br>
+            <form accept-charset="UTF-8" action="{{ path('fos_user_security_check') }}" class="form" id="login-nav" method="post" name="login-nav" role="form">
+                <div class="form-group">
+                    <label class="control-label" for="mail">Email</label>
+                    <input class="form-control input-sm" name="_username" id="mail" placeholder="Email address" required="" type="email" value="{% if last_username is not defined or last_username is empty %}{{ app.request.query.get("email") }}{% else %}{{ last_username }}{% endif %}">
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="pass">Password</label>
+                    <input class="form-control input-sm" name="_password" id="pass" placeholder="Password" required="" type="password">
+                </div>
+                <div class="checkbox">
+                    <label>
+                        <input name="rememberme" type="checkbox" value="true" id="rememberme" class="btn btn-link">
+                        <input name="rememberme" type="hidden" value="on">
+                        keep me logged-in
+                    </label>
+                </div>
+                <br>
+                <input type="hidden" name="_csrf_token" value="{{ fos_csrf_provider.refreshToken('authenticate') }}" />
+                <input type="submit" name="login" class="login loginmodal-submit" value="Login">
+            </form>
+            <div class="login-help">
+                <a href="{{ path('homepage') }}#pricing">Register</a> - <a href="{{ path('fos_user_resetting_request') }}">Forget the password ?</a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% include '_shared/_messages.html.twig' %}

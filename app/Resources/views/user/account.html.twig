@@ -1,0 +1,250 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain "pages" %}
+
+{% block title %}{{ app.user.username }}{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+
+    <div class="container content account block-page">
+        <div class="row">
+            <div class="col-sm-12">
+                {% for flash_message in app.session.flashBag.get('error') %}
+                    <div class="alert alert-danger alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Error!</strong> {{ flash_message }}
+                    </div>
+                {% endfor %}
+                {% for flash_message in app.session.flashBag.get('success') %}
+                    <div class="alert alert-success alert-dismissible" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Success!</strong> {{ flash_message }}
+                    </div>
+                {% endfor %}
+                <div class="row">
+                    <div id="profile" class="col-sm-6">
+                        <div class="panel panel-info panel-profile">
+                            <div class="panel-heading panel-bg">
+                                <h3 class="panel-title">{{ app.user.username }}</h3>
+                            </div>
+                            <form data-toggle="validator" role="form" method="POST" action="{{ path('shop_user_account') }}" id="customer_form" class="form-horizontal">
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div align="center" class="col-md-3 col-lg-3">
+                                            <img alt="User Pic" class="img-thumbnail img-responsive" src="https://i.imgur.com/Kuxxp59.jpg">
+                                        </div>
+                                        <div class=" col-md-9 col-lg-9">
+                                            {{ form_start(userForm) }}
+                                            {{ form_errors(userForm) }}
+                                            <table class="table table-user-information">
+                                                <tbody>
+                                                <tr class="form-group has-feedback">
+                                                    <td style="border-top: 0;">First name:</td>
+                                                    <td style="border-top: 0;">
+                                                        {{ form_widget(userForm.first_name, { 'attr':
+                                                            {
+                                                                'class': 'form-control required input',
+                                                                'autocorrect': 'off',
+                                                                'required': 'required',
+                                                                'value': customer.first_name
+                                                            } }) }}
+                                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                {% if form_errors(userForm.first_name) %}
+                                                    <tr>
+                                                        <td>Error:</td><td>{{ form_errors(userForm.first_name) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                                <tr class="form-group has-feedback">
+                                                    <td>Last name:</td>
+                                                    <td>
+                                                        {{ form_widget(userForm.last_name, { 'attr':
+                                                            {
+                                                                'class': 'form-control required input',
+                                                                'autocorrect': 'off',
+                                                                'required': 'required',
+                                                                'value': customer.last_name
+                                                            } }) }}
+                                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                {% if form_errors(userForm.last_name) %}
+                                                    <tr>
+                                                        <td>Error:</td><td>{{ form_errors(userForm.last_name) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                                <tr class="form-group has-feedback">
+                                                    <td>Address:</td>
+                                                    <td>
+                                                        {{ form_widget(userForm.address, { 'attr':
+                                                            {
+                                                                'class': 'form-control required input',
+                                                                'autocorrect': 'off',
+                                                                'required': 'required',
+                                                                'value': customer.address
+                                                            } }) }}
+                                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                {% if form_errors(userForm.address) %}
+                                                    <tr>
+                                                        <td>Error:</td><td>{{ form_errors(userForm.address) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                                <tr class="form-group has-feedback">
+                                                    <td>Postcode:</td>
+                                                    <td>
+                                                        {{ form_widget(userForm.postcode, { 'attr':
+                                                            {
+                                                                'class': 'form-control required input',
+                                                                'autocorrect': 'off',
+                                                                'required': 'required',
+                                                                'value': customer.postcode
+                                                            } }) }}
+                                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                {% if form_errors(userForm.postcode) %}
+                                                    <tr>
+                                                        <td>Error:</td><td>{{ form_errors(userForm.postcode) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                                <tr class="form-group has-feedback">
+                                                    <td>City:</td>
+                                                    <td>
+                                                        {{ form_widget(userForm.city, { 'attr':
+                                                            {
+                                                                'class': 'form-control required input',
+                                                                'autocorrect': 'off',
+                                                                'required': 'required',
+                                                                'value': customer.city
+                                                            } }) }}
+                                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                {% if form_errors(userForm.city) %}
+                                                    <tr>
+                                                        <td>Error:</td><td>{{ form_errors(userForm.city) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                                {#
+                                                <tr class="form-group has-feedback">
+                                                    <td>{{ 'email'|trans }}:</td>
+                                                    <td>
+                                                        {{ form_widget(userForm.email, { 'attr':
+                                                            {
+                                                                'class': 'form-control required input',
+                                                                'autocorrect': 'off',
+                                                                'required': 'required',
+                                                                'pattern': '.{6,}',
+                                                                'value': customer.email
+                                                            } }) }}
+                                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                {% if form_errors(userForm.email) %}
+                                                    <tr>
+                                                        <td>{{ 'error'|trans }}:</td><td>{{ form_errors(userForm.email) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                                #}
+                                                <tr class="form-group has-feedback">
+                                                    <td>Phone:</td>
+                                                    <td>
+                                                        {{ form_widget(userForm.phone, { 'attr':
+                                                            {
+                                                                'class': 'form-control required input',
+                                                                'autocorrect': 'off',
+                                                                'value': customer.phone
+                                                            } }) }}
+                                                        <span class="glyphicon form-control-feedback" aria-hidden="true"></span>
+                                                    </td>
+                                                </tr>
+                                                {% if form_errors(userForm.phone) %}
+                                                    <tr>
+                                                        <td>Error:</td><td>{{ form_errors(userForm.phone) }}</td>
+                                                    </tr>
+                                                {% endif %}
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <input type="submit" class="btn btn-success pull-right" value="Save Changes">
+                                </div>
+                                {{ form_widget(userForm._token) }}
+                                {{ form_end(userForm, {'render_rest': false}) }}
+                            </form>
+                        </div>
+                    </div>
+                    {% if (subscription is not null) %}
+                        <div class="col-sm-6">
+                            <div class="panel panel-info panel-subscription">
+                                <div class="panel-heading panel-bg">
+                                    <h3 class="panel-title">Subscription Number: <span class="pull-right">{{ app.user.subscriptionId }}</span></h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div align="center" class="col-md-3 col-lg-3">
+                                            <img alt="Subscription" class="img-responsive" src="{{ asset('images/misc/logo.png') }}">
+                                        </div>
+                                        <div class=" col-md-9 col-lg-9">
+                                            <table class="table table-user-information">
+                                                <tbody>
+                                                <tr>
+                                                    <td style="border-top: 0;">Name:</td>
+                                                    <td style="border-top: 0;"><span id="product_name">{{ subscription.name }}</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Type:</td>
+                                                    <td style="text-transform: capitalize;">{{ subscription.type }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Status:</td>
+                                                    <td style="text-transform: capitalize;">{{ subscription.status }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Price:</td>
+                                                    <td>{{ subscription.price|number_format }} {{ subscription.currency }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Interval</td>
+                                                    <td style="text-transform: capitalize;">{{ subscription.interval }}</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Next billing date</td>
+                                                    <td style="text-transform: capitalize;"><span id="next-billing-date">{{ subscription.next_billing_date|date("d/m/Y") }}</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Questions?</td>
+                                                    <td>
+                                                        <a href="mailto:{{ support_email }}?subject=Regarding Subscription: {{ app.user.subscriptionId }}">{{ support_email }}</a>
+                                                    </td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <a href="mailto:{{ support_email }}?subject=Regarding Subscription: {{ app.user.subscriptionId }}" data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary btn-mail"><i class="glyphicon glyphicon-envelope" style="top: 2px;"></i></a>
+                                    {% if (subscription.status == 'active') %}
+                                        <span class="pull-right">
+                                            <a class="btn btn-sm btn-danger cancel-subscription" data-subscription-id="{{ app.user.subscriptionId }}" data-original-title="Cancel" data-toggle="tooltip" type="button" style="width: 180px; padding-top: 8px;">
+                                                Cancel Subscription
+                                            </a>
+                                        </span>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include '/_shared/_footer.html.twig' %}
+{% endblock %}

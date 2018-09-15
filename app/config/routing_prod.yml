@@ -1,0 +1,14 @@
+app_site:
+    path:     /{slug}
+    host:     "{username}.easywebbuilder.eu"
+    defaults:
+        _controller: "AppSiteBundle:Front/Site:index" # keeping * as placeholder will lead to *.site.eu/home which may not be what you want
+        username: demo
+        slug: ''
+    requirements:
+        username: ".+"
+    options:
+      i18n: false
+
+_main:
+    resource: routing.yml

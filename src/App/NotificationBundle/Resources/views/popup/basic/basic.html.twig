@@ -1,0 +1,14 @@
+{% trans_default_domain "pages" %}
+
+<script type="text/javascript">
+    $('document').ready(function() {
+        swal({
+            title: "{{ title }}",
+            text: "{{ text }}",
+            type: "{{ type }}",
+            showCancelButton: true,
+            showConfirmButton: false,
+            cancelButtonText: "{{ 'close'|trans }}"
+        });
+    });
+</script>

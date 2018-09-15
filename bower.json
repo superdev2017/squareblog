@@ -1,0 +1,25 @@
+{
+  "name": "conzumomail",
+  "authors": [
+    "Ivan0905 <ivan@irenterprise.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "web/assets/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flag-icon-css": "^2.7.0",
+    "owl.carousel": "^2.2.0",
+    "bootstrap-validator": "^0.11.8",
+    "sweetalert2": "^6.2.1"
+  }
+}

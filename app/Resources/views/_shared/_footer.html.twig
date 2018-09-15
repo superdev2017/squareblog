@@ -1,0 +1,65 @@
+{% trans_default_domain "pages" %}
+<!--footer-->
+<footer>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 footer-detail">
+                    <div class="footer-heading">
+                        <h4><span>About</span> Us</h4>
+                        <br>
+                        <p>
+                            Start building the web today with {{ app_name }}! {{ app_name }} is a easy to use website builder platform, where anyone can build their very own website with minimal effort.
+                        </p>
+                        <p>We at {{ app_name }} have a high quality standard, and all of our software products are of high quality.</p>
+                    </div>
+                </div>
+              
+                <div class="col-md-4 col-md-offset-2 footer-detail">
+                    <div class="footer-heading">
+                        <h4><span>{{ company_name }}</span> </h4>
+                        <div class="insta">
+                            <div class="address">
+                                <p>{{ company_address }} <br>
+                                    {{ company_city }} <br>
+                                    {{ company_country }}
+                                </p>
+                            </div>
+                            <div class="contact-info">
+                                <p><span>@</span> {{ support_email }}</p>
+                                <p><span>☎</span> {{ support_phone }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--bottom footer-->
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-left">
+                        <p>Copyright © {{ app_name }} {{ 'now'|date('Y') }}. All rights reserved.</p>
+                        <div class="credits">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="footer-right">
+                        <ul class="list-unstyled list-inline pull-right">
+                            <li><a href="{{ path('contact') }}">Get in touch</a></li>
+                            <li><a href="{{ path('terms') }}">Terms &amp; Conditions</a></li>
+                            <li><a href="{{ path('return') }}">Return policy</a></li>
+                            <li><a href="{{ path('privacy') }}">Privacy policy</a></li>
+                            <li><a href="{{ path('charge') }}" target="_blank">Why was i billed?</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>

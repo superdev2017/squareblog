@@ -1,0 +1,15 @@
+{% extends "@FOSUser/layout.html.twig" %}
+
+{% trans_default_domain 'FOSUserBundle' %}
+
+{% block fos_user_content %}
+<div class="credentials" style="margin-bottom: 45px; margin-top: 35px;">
+    <h3 class="text-center uppercase" style="margin-bottom: 25px; margin-top: 15px;"><strong>Reset Password</strong></h3>
+    <div class="group">
+        <div class="table-cell line"></div>
+        <div class="table-cell line"></div>
+        <div class="table-cell line"></div>
+    </div>
+    {{ 'resetting.check_email'|trans({'%tokenLifetime%': tokenLifetime, '%email%': app.request.get("username")})|nl2br }}
+</div>
+{% endblock %}

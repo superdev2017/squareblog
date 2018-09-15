@@ -1,0 +1,49 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain "pages" %}
+
+{% block title %}Orders{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+    <section class="block-header-wrapper">
+        <div class="container">
+            <div class="block-header">
+                <h2>My Orders</h2>
+                <p>Here you can view your pending & paid orders.</p>
+            </div>
+        </div>
+    </section>
+    <div class="container block block-page">
+        <div class="orders">
+            <div class="table-responsive">
+                <table class="table table-orders table-hover">
+                    <thead>
+                    <tr>
+                        <th>Order id</th>
+                        <th>Product</th>
+                        <th>Type</th>
+                        <th>Total</th>
+                        <th>Status</th>
+                        <th>Created at</th>
+                        <th></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for order in orders %}
+                        <tr>
+                            <td>{{ order.id }}</td>
+                            <td>{{ order.product_name }}</td>
+                            <td class="type">{{ order.type|replace({'_': ' '}) }}</td>
+                            <td>{{ order.total|number_format }} {{ order.currency }}</td>
+                            <td class="status {{ order.status }}"><span class="tag tag-{{ order.status }}">{{ order.status|replace({'_': ' '}) }}</span></td>
+                            <td>{{ order.created_at|date('Y-m-d') }}</td>
+                            <td><a class="btn btn-info" href="{{ path('shop_user_orders_invoice', {'id': order.id}) }}" target="_blank">Get Invoice</a></td>
+                        </tr>
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    {% include '/_shared/_footer.html.twig' %}
+{% endblock %}

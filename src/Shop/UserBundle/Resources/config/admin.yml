@@ -1,0 +1,10 @@
+services:
+    shop_user.admin.user:
+        class: Shop\UserBundle\Admin\UserAdmin
+        arguments: [~, "%shop.user.class%", ~]
+        tags:
+            - { name: sonata.admin, manager_type: orm, group: "Users", label: "Users" }
+        calls:
+            - [ setTranslationDomain, [Shop\UserBundle]]
+            - [ setContainer,[ "@service_container" ] ]
+

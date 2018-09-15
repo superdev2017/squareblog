@@ -1,0 +1,33 @@
+{
+  "name" : "shop/userbundle",
+  "description": "Things for rapid development of subscription shops",
+  "type" : "symfony-bundle",
+  "authors": [
+    {
+      "name": "Ivan Ristic",
+      "email": "ivan@irenterprise.dk"
+    }
+  ],
+  "keywords" : [
+    "bundle"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+    "shop/shopbundle": "dev-master"
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Shop\\UserBundle" : ""
+    }
+  },
+  "target-dir" : "Shop/UserBundle",
+  "repositories" : [{
+  }],
+  "extra" : {
+    "branch-alias" : {
+      "dev-master" : "1"
+    }
+  }
+}

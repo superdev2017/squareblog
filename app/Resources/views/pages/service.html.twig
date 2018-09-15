@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block title %}Services{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+
+        <!--services wrapper-->
+        <section id="our-services">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="text-center section-heading">
+                        <h2>Our Service</h2>
+                        <p>{{ app_name }} is a top provider of website building software.<br> Our software comes in 2 packages, we provide a basic editor with a small learning curve,<br> and a pro editor for those with unique requests.</p>
+                    </div>
+
+                    <div class="row1">
+                       <div class="col-md-4 service">
+                            <div class="box">
+                                <div class="icon-circle"><i class="ion-iphone" aria-hidden="true"></i></div>
+                                <h4>ULTIMATE EDITOR</h4>
+                                <div class="text">Our editor automatically makes your website responsive on all devices!</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 service">
+                            <div class="box">
+                                <div class="icon-circle"><i class="ion-wrench" aria-hidden="true"></i></div>
+                                <h4>USER-FRIENDLY INTERFACE</h4>
+                                <div class="text">Our Interface is build with the end user in mind. Anyone can jump right in and have a website running in 10 minutes!</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 service">
+                            <div class="box">
+                                <div class="icon-circle"><i class="fa ion-android-document" aria-hidden="true"></i></div>
+                                <h4>DEVELOPMENT PLEDGE</h4>
+                                <div class="text">We promise to add new themes on a regular basis, your subscription will always be relevant.</div>
+                            </div>
+                        </div> 
+                    </div>
+
+                    <div class="row1">
+                       <div class="col-md-4 service">
+                            <div class="box">
+                                <div class="icon-circle"><i class="ion-lock-combination" aria-hidden="true"></i></div>
+                                <h4>AUTOMATIC PROTECTION</h4>
+                                <div class="text">If you chose to keep our domain, our SSL certificate automatically covers your website.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 service">
+                            <div class="box">
+                                <div class="icon-circle"><i class="ion-speakerphone" aria-hidden="true"></i></div>
+                                <h4>TONS OF PLUGINS</h4>
+                                <div class="text">You will get access to tons of plugins that you can add/remove or customize! New plugins are added on demand.</div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 service">
+                            <div class="box">
+                                <div class="icon-circle"><i class="ion-videocamera" aria-hidden="true"></i></div>
+                                <h4>MULTIPLE DATA CENTERS</h4>
+                                <div class="text">Our data is stored across multiple data centers, your website will always be served to the end client using the nearest data center!</div>
+                            </div>
+                        </div> 
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!--Content Column-->
+        <section id="sign-up">
+            <div class="content-column clearfix">
+                <div class="container">
+                    <div class="row">
+                        <!--Section Title-->
+                        <div class="col-md-8">
+                            <h2> Site builder</h2>
+                            <div class="text">As part of our service and included in the price we offer technical support, server hosting and assistance. Everything is build around making you able to build the best websites for your needs – with ease, comfort and the support you need. </div>
+                        </div>
+                        <div class="col-md-4">
+                            <a href="{{ path('homepage') }}#pricing" class="btn btn-danger btn-lg pull-right">Sign Up Today</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    {% include '/_shared/_footer.html.twig' %}
+{% endblock %}

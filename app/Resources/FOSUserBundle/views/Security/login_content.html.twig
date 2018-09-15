@@ -1,0 +1,50 @@
+{% trans_default_domain 'FOSUserBundle' %}
+
+<div class="credentials">
+    <h3 class="text-center uppercase"><strong>Log in</strong></h3>
+    <div class="group">
+        <div class="table-cell line"></div>
+        <div class="table-cell text"><img src="{{ asset('images/misc/logo.png') }}" class="img-responsive" alt="{{ app_name }}" /></div>
+        <div class="table-cell line"></div>
+    </div>
+    <div class="form-group form-errors">
+        {% if error %}
+            <div class="alert alert-danger" role="alert">
+                <strong>{{ "Error"|trans({}, 'pages') }}:</strong> {{ error.messageKey|trans(error.messageData, 'security') }}
+            </div>
+        {% endif %}
+    </div>
+    <form action="{{ path('fos_user_security_check') }}" method="post" role="form" novalidate="novalidate">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input class="form-control" type="email" name="_username" id="username" placeholder="" value="{% if last_username is empty %}{{ app.request.query.get("email") }}{% else %}{{ last_username }}{% endif %}" required="required">
+            <p class="help-block"><span class="field-validation-valid text-danger" data-valmsg-for="email" data-valmsg-replace="true"></span></p>
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input class="form-control" type="password" name="_password" id="password" value="" required="required">
+            <p class="help-block"><span class="field-validation-valid text-danger" data-valmsg-for="password"></span></p>
+        </div>
+        <div class="form-group">
+            <div class="checkbox pull-left">
+                <label>
+                    <input name="rememberme" type="checkbox" value="true" id="rememberme" class="btn btn-link">
+                    <input name="rememberme" type="hidden" value="on">
+                    Remember me
+                </label>
+            </div>
+            <p class="pull-right forgot-password">
+                <a href="{{ path('fos_user_resetting_request') }}" id="forgot-password">Forgot Password?</a><br>
+            </p>
+            <div class="clearfix"></div>
+        </div>
+        <button type="submit" class="btn btn-pw btn-block row-margin-top btn-success">Log me in</button>
+        {% if csrf_token %}
+            <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
+        {% endif %}
+    </form>
+</div>
+<p class="text-center" style="margin: 0; padding: 20px; background: #eeeeee; border-radius: 0 0 5px 5px;">
+    Not a member yet?<br>
+    <b><a href="{{ path('homepage') }}">Sign up</a></b>
+</p>

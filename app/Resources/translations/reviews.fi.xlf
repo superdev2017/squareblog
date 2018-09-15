@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:jms="urn:jms:translation" version="1.2">
+  <file date="2017-01-14T22:13:31Z" source-language="en" target-language="fi" datatype="plaintext" original="not.available">
+    <header>
+      <tool tool-id="JMSTranslationBundle" tool-name="JMSTranslationBundle" tool-version="1.1.0-DEV"/>
+      <note>The source node in most cases contains the sample message as written by the developer. If it looks like a dot-delimitted string such as "form.label.firstname", then the developer has not provided a default message.</note>
+    </header>
+    <body>
+      <trans-unit id="f095854272126e0f83621f200e3d33432ed8124b" resname="review.1.">
+        <source>review.1.</source>
+        <target>review.1.</target>
+        <jms:reference-file line="49">/../src/App/CoreBundle/Controller/Front/PagesController.php</jms:reference-file>
+      </trans-unit>
+      <trans-unit id="5994ec971189f65d6869328d2287c88d2a1028fe" resname="review.2">
+        <source>review.2</source>
+        <target>review.2</target>
+        <jms:reference-file line="55">/../src/App/CoreBundle/Controller/Front/PagesController.php</jms:reference-file>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

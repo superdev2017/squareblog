@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain "pages" %}
+
+{% block title %}Builder{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+    <div id="loading" style="width: 100%; text-align: center;">
+        <img src="{{ asset('images/misc/loading.gif') }}" class="img-responsive" style="display: inline-block" alt="Loading" />
+    </div>
+    <script>
+        function resizeIframe(obj) {
+            $('#loading').remove();
+            $('#builder').show();
+            obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+    </script>
+    <iframe id="builder" src="{{ iframe }}" frameborder="0" scrolling="yes" style="height: 1000px; width: 100%; margin-bottom: -6px; display: none;" onload="resizeIframe(this)"></iframe>
+    {#{% include '/_shared/_footer.html.twig' %}#}
+{% endblock %}

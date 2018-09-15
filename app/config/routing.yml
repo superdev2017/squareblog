@@ -1,0 +1,57 @@
+app:
+    resource: "@AppCoreBundle/Controller/Front"
+    type:     annotation
+
+shop_shop:
+    resource: "@ShopShopBundle/Controller/"
+    type:     annotation
+    prefix:   /shop
+
+shop_user:
+    resource: "@ShopUserBundle/Controller/Front"
+    type:     annotation
+    prefix: /user
+
+fos_user:
+    resource: "@FOSUserBundle/Resources/config/routing/all.xml"
+    prefix: /user
+    options:
+      i18n: false
+
+fos_user_profile_show:
+    path: /
+
+fos_js_routing:
+    resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
+
+admin:
+    resource: '@SonataAdminBundle/Resources/config/routing/sonata_admin.xml'
+    prefix: /admin
+    options:
+      i18n: false
+
+_sonata_admin:
+    resource: .
+    type: sonata_admin
+    prefix: /admin
+    options:
+      i18n: false
+
+
+_JMSTranslationBundle_ui:
+    resource: '@JMSTranslationBundle/Controller/'
+    type:     annotation
+    prefix:   /_trans
+    options:
+      i18n: false
+
+app_api:
+    type: rest
+    prefix: /api/{api_kind}/
+    resource: "routing/routing_api.yml"
+    options:
+      i18n: false
+    defaults:
+      api_kind: f
+    requirements:
+      api_kind: f|l|s #f = stateful, l = stateless, s = secure stateless

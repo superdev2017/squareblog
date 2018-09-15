@@ -1,0 +1,127 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain "pages" %}
+
+{% block title %}Templates{% endblock %}
+
+{% block body %}
+    {% include '/_shared/_header.html.twig' %}
+
+    <!--templates-->
+    <div id="templates" class="templates-page page">
+        <div class="container">
+            <div class="row">
+                <div class="text-center section-heading">
+                    <h2>Our Templates</h2>
+                    <p>Are you a Gold member? <br>
+                        There are more than 500 templates included.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="templates-thumbnail" style="margin-bottom: 40px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template1.jpg') }}"><img src="{{ asset('images/templates/template1.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template2.jpg') }}"><img src="{{ asset('images/templates/template2.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template3.jpg') }}"><img src="{{ asset('images/templates/template3.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template4.jpg') }}"><img src="{{ asset('images/templates/template4.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template5.png') }}"><img src="{{ asset('images/templates/template5.png') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template6.png') }}"><img src="{{ asset('images/templates/template6.png') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template7.jpg') }}"><img src="{{ asset('images/templates/template7.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template8.png') }}"><img src="{{ asset('images/templates/template8.png') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template13.jpg') }}"><img src="{{ asset('images/templates/template13.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template9.jpg') }}"><img src="{{ asset('images/templates/template9.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template10.jpg') }}"><img src="{{ asset('images/templates/template10.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template11.jpg') }}"><img src="{{ asset('images/templates/template11.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template12.jpg') }}"><img src="{{ asset('images/templates/template12.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template14.jpg') }}"><img src="{{ asset('images/templates/template14.jpg') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="item">
+                            <a class="thumbnail gallery" href="{{ asset('images/templates/template15.png') }}"><img src="{{ asset('images/templates/template15.png') }}" alt="template"></a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    {% include '/_shared/_footer.html.twig' %}
+{% endblock %}

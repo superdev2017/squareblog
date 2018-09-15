@@ -1,0 +1,21 @@
+{% trans_default_domain 'FOSUserBundle' %}
+<div class="credentials" style="margin-top: 60px;">
+    <h3 class="text-center uppercase"><strong>Reset Password</strong></h3>
+    <div class="group">
+        <div class="table-cell line"></div>
+        <div class="table-cell text"></div>
+        <div class="table-cell line"></div>
+    </div>
+    <form action="{{ path('fos_user_resetting_send_email') }}" method="post" role="form" novalidate="novalidate" style="text-align: center">
+        <div class="form-group">
+            <label for="subscription_id" style="text-align: left; margin-top: 20px; float: left;">{{ 'resetting.request.username'|trans }}:</label>
+            <input class="form-control" type="text" name="username" id="username" placeholder="" value="" required="required">
+            <p class="help-block"><span class="field-validation-valid text-danger" data-valmsg-for="email" data-valmsg-replace="true"></span></p>
+        </div>
+        <button type="submit" class="btn btn-pw btn-block row-margin-top btn-success" style="margin-top: 15px;">{{ 'resetting.request.submit'|trans }}</button>
+    </form>
+</div>
+<p class="text-center" style="padding: 20px;">
+    Not a member?<br>
+    <b><a href="{{ path('homepage') }}#pricing">Sign up</a></b>
+</p>
